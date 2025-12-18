@@ -1,0 +1,20 @@
+ID,Initiative,Card Name,Tier,Color,Defense,Movement,Attack,Action Type,Range/Radius,Card Text,Item Icon
+G1,3,Brace for Impact,I,Green,3,2,,Skill,,Move 3 spaces in a straight line ignoring obstacles to a space adjacent to an enemy hero; that hero discards a card if able.,
+B3B,11,A Fistful of Coins,III,Blue,6,3,,Skill,3,An enemy hero in radius **chooses one** — \n• You place that hero in a space in radius.\n• You gain 3 coins. If you have 13 or more coins you alone win the game.,Attack
+P4,,Legend of the Skies,IV,Purple,,,,Ultimate,,"The first time each turn after you perform a primary action, you may perform the primary action of a card in the previous turn slot.",
+R3A,9,Fearless Lunge,III,Red,7,3,5+,Attack,,"**Choose one** — \n• Before the attack: Move 1, 2 or 3 spaces in a straight line. Target a hero adjacent to you in the direction of the move; +2 Attack.\n• Target a unit adjacent to you.",Movement
+B3A,11,Broadside,III,Blue,6,3,,Skill,4,"An enemy hero in radius, adjacent to another enemy unit and not adjacent to you, discards a card if able.\nMay repeat once on a different target.",Initiative
+SB,5,Grappling Bolt,Basic,Silver,2,,,Basic Skill - Ranged,5,Target an obstacle in range and in a straight line with no obstacles between you; ignore immunity. Move in a straight line towards that obstacle until you are adjacent to it.,
+AuH,12,Few More Steps,H,Gold,1,1,,Basic Skill,,Push an enemy hero adjacent to you up to 3 spaces; if that hero is pushed into another zone that hero discards a card or is defeated.,
+R3B,9,Tumble Shot,III,Red,5,3,4,Attack - Ranged,2,Target a unit in range and in a straight line.\nAfter the attack: Move up to 3 spaces in the opposite direction.,Radius
+AuB,12,Walk the Plank,Basic,Gold,2,1,,Basic Skill,,**Choose one** — \n• Push an enemy hero adjacent to you up to 4 spaces; if that hero is pushed into another zone that hero discards a card or is defeated.\n• Defeat a minion adjacent to you.,
+R2B,9,Evasive Shot,II,Red,4,3,4,Attack - Ranged,2,Target a unit in range and in a straight line.\nAfter the attack: Move up to 2 spaces in the opposite direction.,Defense
+B1,10,Bombardment,I,Blue,5,3,,Skill,3,An enemy hero in radius adjacent to another enemy unit and not adjacent to you discards a card if able.,
+G3B,2,Crashland,III,Green,4,2,,Skill,,"Move 3, 4 or 5 spaces in a straight line ignoring obstacles to a space adjacent to an enemy hero; that hero discards a card if able.",Range
+G3A,2,Outsmart,III,Green,4,2,,Skill,3,Swap with an enemy minion in radius; you may move that minion up to 3 spaces.,Defense
+B2A,10,Barrage,II,Blue,5,3,,Skill,4,An enemy hero in radius adjacent to another enemy unit and not adjacent to you discards a card if able.,Initiative
+G2B,3,Ramming Speed,II,Green,3,2,,Skill,,Move 3 or 4 spaces in a straight line ignoring obstacles to a space adjacent to an enemy hero; that hero discards a card if able.,Attack
+R1,8,Daring Strike,I,Red,6,3,4+,Attack,,**Choose one** — \n• Before the attack: Move 1 space. Target a hero adjacent to you in the direction of the move; +2 Attack.\n• Target a unit adjacent to you.,
+R2A,9,Bold Thrust,II,Red,6,3,5+,Attack,,**Choose one** — \n• Before the attack: Move 1 or 2 spaces in a straight line. Target a hero adjacent to you in the direction of the move; +2 Attack.\n• Target a unit adjacent to you.,Initiative
+B2B,10,X Marks the Spot,II,Blue,5,3,,Skill,3,An enemy hero in radius **chooses one** — \n• You place that hero in a space in radius.\n• You gain 2 coins.,Attack
+G2A,3,Outmaneuver,II,Green,3,2,,Skill,3,Swap with an enemy minion in radius; you may move that minion up to 2 spaces.,Defense

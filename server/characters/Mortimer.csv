@@ -1,0 +1,61 @@
+ID,Initiative,Card Name,Tier,Color,Defense,Movement,Attack,Action Type,Range/Radius,Card Text,Item Icon
+R2B,7,Braains...!,II,Red,7,3,7,Attack,4,"Target a unit adjacent to you.
+Before the attack: Choose up to two times —
+• Move a Zombie token in radius 1 space.
+• If an enemy hero in radius is adjacent to a Zombie token, retrieve a discarded card.",Initiative
+SB,6,Awaken!,Basic,Silver,3,,,,Basic Defense / Skill,4,"Place up to 4 Zombie tokens into spaces adjacent to you, or into spawn points in radius. Zombie tokens are not removed at the end of round.",
+R2A,7,Walking Dead,II,Red,7,3,7,Attack,4,"Target a unit adjacent to you.
+After the attack: Choose up to two times —
+• Move a Zombie token in radius 1 space.
+• Another enemy hero in radius, adjacent to a Zombie token, discards a card, if able; each enemy hero can only be targeted once.",Defense
+R1,7,Crawling Dead,I,Red,7,3,6,Attack,4,"Target a unit adjacent to you.
+After the attack: Choose one —
+• Move a Zombie token in radius 1 space.
+• Another enemy hero in radius, adjacent to a Zombie token, discards a card, if able.",
+G1,5,Stage Dive,I,Green,3,2,,Skill - Ranged,4,"Choose one —
+• Move a Zombie token in range 1 space.
+• Swap with a Zombie token in range.",
+G2,5,Gathering Horde,II,Green,4,2,,Skill - Ranged,4,"Choose up to two times —
+• Move a Zombie token in range 1 space.
+• Once per turn: Replace an enemy minion in range adjacent to two or more Zombie tokens with a Zombie token.",Initiative
+B1,9,Corpse Slam,I,Blue,6,3,,Skill - Ranged,4,"Choose one —
+• Move a Zombie token in range up to 1 space; that Zombie token may push a unit or a token adjacent to it 1 space.
+• Move 1 space.",
+AuB,11,Knife of the Living Dead,Basic,Gold,3,1,4+,Basic Attack,4,"Target a unit adjacent to you.
+Before the attack: Choose up to three times —
+• Move a Zombie token in radius 1 space.
+• Remove a Zombie token adjacent to the target; if you do, gain +1 Attack.",
+G2B,5,Crowd Drift,II,Green,4,2,,Skill - Ranged,4,"Choose up to two times —
+• Move a Zombie token in range 1 space.
+• Swap with a Zombie token in range.",Attack
+G3B,4,Crowd Surf,III,Green,4,2,,Skill - Ranged,4,"Choose up to three times —
+• Move a Zombie token in range 1 space.
+• Swap with a Zombie token in range.",Attack
+G3,4,Army of Darkness,III,Green,4,2,,Skill - Ranged,4,"Choose up to three times —
+• Move a Zombie token in range 1 space.
+• Once per turn: Replace an enemy minion in range adjacent to two or more Zombie tokens with a Zombie token.",Initiative
+B3B,10,Stalking Scalpers,III,Blue,7,3,,Skill - Ranged,4,"Choose up to three times —
+• Move a Zombie token in range up to 1 space. Gain 1 coin.
+• Move 1 space.",Defense
+R3A,8,Racing Dead,III,Red,8,3,7,Attack,4,"Target a unit adjacent to you.
+After the attack: Choose up to three times —
+• Move a Zombie token in radius 1 space.
+• Another enemy hero in radius, adjacent to a Zombie token, discards a card, if able; each enemy hero can only be targeted once.",Radius
+B3A,10,Macabre Mayhem,III,Blue,7,3,,Skill - Ranged,4,"Choose up to three times —
+• Move a Zombie token in range up to 1 space; that Zombie token may push a unit or a token adjacent to it 1 space.
+• Move 1 space.",Radius
+P4,,Master of Puppets,IV,Purple,,,,Ultimate,,"Whenever you would choose up to three times, you may choose up to five times instead.",
+B2B,9,Robbing Zombies,II,Blue,6,3,,Skill - Ranged,4,"Choose up to two times —
+• Move a Zombie token in range up to 1 space. Gain 1 coin.
+• Move 1 space.",Defense
+B3B,9,Morbid Mosh,II,Blue,6,3,,Skill - Ranged,4,"Choose up to two times —
+• Move a Zombie token in range up to 1 space; that Zombie token may push a unit or a token adjacent to it 1 space.
+• Move 1 space.",Attack
+AuH,10,Shallow Graves,H,Gold,1,1,3+,Basic Attack,4,"Target a hero adjacent to you.
+Before the attack: Choose up to two times —
+• Move a Zombie token in radius 1 space.
+• Remove a Zombie token adjacent to the target; if you do, gain +1 Attack.",
+R3B,8,Braaaaaaaains...!,III,Red,8,3,7,Attack,4,"Target a unit adjacent to you.
+Before the attack: Choose up to three times —
+• Move a Zombie token in radius 1 space.
+• If an enemy hero in radius is adjacent to a Zombie token, retrieve a discarded card.",Movement
