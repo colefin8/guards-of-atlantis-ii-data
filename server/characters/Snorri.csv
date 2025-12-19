@@ -1,0 +1,76 @@
+ID,Initiative,Card Name,Tier,Color,Defense,Movement,Attack,Action Type,Range/Radius,Card Text,Item Icon
+S,1,Inscribe The Runes,Basic,Silver,3,,,Basic Skill,,"Give yourself 4 [Horn] [Axe] [Anvil] [Wings] Rune markers and place one below each of your turn slots.
+A rune is active as long as it is below the turn slot matching the current turn.
+Rune markers are not removed at the end of round, nor if you are defeated.",
+D,11,Rune Sigils,Basic,Gold,2,1,2+,Basic Attack - Ranged,2,"Target a unit adjacent to you;
+if a rune is active:
+[Wings]: You may target a minion in range instead.
+[Axe]: +3 [Crossed Swords] Attack.
+[Anvil]: If you target a hero, gain 3 coins.
+[Horn]: Repeat once on a different hero in range.",
+DH,10,Rune Shards,H,Gold,1,1,1+,Basic Skill - Ranged,2,"Target a hero adjacent to you;
+if a rune is active:
+[Axe]: +3 [Crossed Swords] Attack.
+[Anvil]: Gain 2 coins.
+[Horn]: Repeat once on a different hero in range.",
+R1,7,Runic Dagger,I,Red,6,3,5,Attack,,"Target a unit adjacent to you.
+After the attack: If the [Anvil] rune is active, you may retrieve a discarded card.",
+R2A,7,Runic Hammer,II,Red,7,3,5,Attack,,"Before the attack: If the [Horn] rune is active, you may move 1 space.
+Target a unit adjacent to you.
+After the attack: If the [Anvil] rune is active, you may retrieve a discarded card.",Initiative
+R2B,7,Runecaster,II,Red,6,3,4,Attack - Ranged,3,"Target a unit at maximum range.
+After the attack: If a rune is active:
+[Horn]: Move up to 2 spaces.
+[Axe]: An enemy hero who was adjacent to the target discards a card, or is defeated.",Radius
+R3A,8,Runic Battleaxe,III,Red,7,3,6,Attack,,"Before the attack: If the [Horn] rune is active, you may move 1 space.
+Target a unit adjacent to you.
+After the attack: If a rune is active:
+[Axe]: May repeat once on an enemy minion.
+[Anvil]: You may retrieve a discarded card.",Radius
+R3B,8,Runeblaster,III,Red,6,3,5,Attack - Ranged,3,"If the [Wings] rune is active, target a unit in range, otherwise target a unit at maximum range.
+After the attack: If a rune is active:
+[Horn]: Move up to 2 spaces.
+[Axe]: An enemy hero who was adjacent to the target discards a card, or is defeated.",Movement
+G1,5,Oath of Endurance,I,Green,,2,,Defense,,"If a rune is active:
+[Horn]: Block a basic attack.
+[Axe]: Block a non-ranged attack.
+This Turn: You are immune to enemy actions.",
+G2A,5,Oath of Fortitude,II,Green,,2,,Defense,,"If a rune is active:
+[Horn]: Block a basic attack;
+[Axe]: Block a non-ranged attack;
+[Wings]: Block a ranged attack;
+This Turn: You are immune to enemy actions.",Initiative
+G2B,5,Runetrap,II,Green,3,2,,Skill,3,"If a rune is active, an enemy hero in radius:
+[Horn]: Discards a green card, if able.
+[Axe]: Discards a silver card, if able.
+[Anvil]: Discards a blue card, if able.",Attack
+G3A,4,Oath of Perseverance,III,Green,,2,,Defense,,"Choose one active rune:
+[Horn]: Block a basic attack;
+[Axe]: Block a non-ranged attack;
+[Wings]: Block a ranged attack;
+[Anvil]: Block a non-basic attack;
+This Turn: You are immune to enemy actions.",Initiative
+G3B,4,Runebomb,III,Green,4,2,,Skill,3,"Choose one active rune; depending on that rune, an enemy hero in radius:
+[Horn]: Discards a green card, if able.
+[Axe]: Discards a silver card, if able.
+[Anvil]: Discards a blue card, if able.
+[Wings]: Discards a gold card, if able.",Radius
+B1,9,Safe Passage,I,Blue,5,3,,Movement,,"If the [Wings] rune is active,
+This turn: You may ignore obstacles.",
+B2A,9,Hidden Passage,II,Blue,6,3,,Movement,,"If a rune is active:
+[Wings]: This turn: You may ignore obstacles.
+[Anvil]: This turn: You are immune to enemy actions.",Attack
+B2B,9,Ancestral Boon,II,Blue,6,3,,Skill,4,"If a rune is active,
+a friendly hero in radius may:
+[Axe]: Swap a resolved card with a card in hand.
+[Anvil]: Retrieve all their discarded cards.",Defense
+B3A,10,Deep Passage,III,Blue,6,3,,Movement,,"If a rune is active:
+[Wings]: This turn: You may ignore obstacles.
+[Anvil]: This turn: You are immune to enemy actions.
+[Horn]: Gain +2 [Boot] Movement.",Radius
+B3B,10,Ancestral Grace,III,Blue,6,3,,Skill,4,"If a rune is active,
+a friendly hero in radius may:
+[Axe]: Swap a resolved card with a card in hand.
+[Anvil]: Retrieve all their discarded cards.
+[Wings]: Swap one of their items with an item on their card of the same tier and color.",Defense
+P,,Rune Mastery,IV,Purple,,,,"Ultimate",,"Each time you perform an action, choose one inactive rune; that rune counts as a second active rune for this action.",

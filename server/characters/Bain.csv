@@ -1,0 +1,34 @@
+ID,Initiative,Card Name,Tier,Color,Defense,Movement,Attack,Action Type,Range/Radius,Card Text,Item Icon
+G1,4,Close Call,I,Green,!,2,,Defense,,"If a hero in play has a Bounty marker, block the attack and that hero gives the marker to you.
+(The marker's effect is applied to you.)",
+G2A,4,Narrow Escape,II,Green,!,2,,Defense,,"If a hero in play has a Bounty marker, block the attack and retrieve the marker.",Initiative
+R1,8,Light Crossbow,I,Red,5,4,5,Attack - Ranged,2,"Target a unit in range and in a straight line with no units or terrain between you.",
+B2A,10,Dead Man's Hand,II,Blue,4,3,,Skill,3,"An enemy hero in radius with two or more cards in hand chooses one of those cards. Guess that card's color, then reveal it.
+If you guessed correctly, discard that card; otherwise you gain 2 coins.",Defense
+B2B,10,Drinking Buddies,II,Blue,4,3,,Skill,3,"You may have a hero in radius retrieve a discarded card. If they do, you may also retrieve a discarded card.",Attack
+B1,9,A Game of Chance,I,Blue,4,3,,Skill,2,"An enemy hero in radius with two or more cards in hand chooses one of those cards. Guess that card's color, then reveal it.
+If you guessed correctly, discard that card; otherwise you gain 1 coin.
+(You can only guess colors that could be in that player's hand.)",
+S,13,Get Over Here!,Basic,Silver,2,,,Basic Skill - Ranged,4,"Target a unit or a token in range and in a straight line, with no obstacles between you and the target. Move the target towards you in a straight line, until you are adjacent.",
+G2B,4,Vantage Point,II,Green,3,2+,,Movement,,"Ignore obstacles. If a hero in play has a Bounty marker, +1 Movement.",Attack
+D,11,Dead or Alive,Basic,Gold,2,1,4,Basic Attack,4,"Target a unit adjacent to you.
+After the attack: You may give an enemy hero in radius the Bounty marker.
+A hero with the Bounty marker spends 1 additional Life counter when defeated.",
+R2B,8,Hand Crossbow,II,Red,6,4,4,Attack - Ranged,3,"Choose one —
+• Target a hero in range with a Bounty marker.
+• Target a unit adjacent to you.",Initiative
+R2A,8,Heavy Crossbow,II,Red,5,4,5,Attack - Ranged,3,"Target a unit in range and in a straight line with no units or terrain between you.",Radius
+G3A,3,Perfect Getaway,III,Green,!,2,,Defense,,"If a hero in play has a Bounty marker, block the attack.",Initiative
+G3B,3,High Ground,III,Green,4,2+,,Movement,,"Ignore obstacles. If a hero in play has a Bounty marker, +2 Movement.",Radius
+B3A,10,We're Not Done Yet!,III,Blue,5,3,,Skill,3,"An enemy hero in radius with two or more cards in hand chooses one of those cards.
+Guess that card's color, then reveal it.
+If you guessed correctly, discard that card; otherwise may repeat once or gain 2 coins.",Radius
+B3B,10,Another One!,III,Blue,5,3,,Skill,3,"You may have a hero in radius retrieve a discarded card. If they do, you may also retrieve a discarded card.
+End of turn: May repeat once.",Attack
+R3B,9,Hunter-Seeker,III,Red,7,4,5,Attack - Ranged,3,"Choose one, or both, on different targets —
+• Target a hero in range with a Bounty marker.
+• Target a unit adjacent to you.",Movement
+R3A,9,Arbalest,III,Red,6,4,6,Attack - Ranged,4,"Target a unit in range and in a straight line with no units or terrain between you.",
+P,,A Complicated Profession,IV,Purple,,,,Ultimate,,"After you give a hero the Bounty marker, that hero discards a card, if able.",
+DH,10,Side Quest,H,Gold,1,1,,Basic Skill,4,"If you are adjacent to an enemy unit, give a hero in radius the Bounty marker.
+A hero with the Bounty marker spends 1 additional Life counter when defeated.",

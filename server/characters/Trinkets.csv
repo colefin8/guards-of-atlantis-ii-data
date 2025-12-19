@@ -1,0 +1,33 @@
+ID,Initiative,Card Name,Tier,Color,Defense,Movement,Attack,Action Type,Range/Radius,Card Text,Item Icon
+R2A,9,Gatling Gun,II,Red,6,4,3+,Attack - Ranged,3,"Target a unit in range of both you and the Turret. If the target is in a straight line from you, and in a straight line from the Turret, gain +2 Attack.",Defense
+R2B,9,Steam Discharge,II,Red,6,4,4,Attack - Ranged,4,"Target a unit in range adjacent to the Turret.
+May repeat once on a different enemy unit.",Initiative
+D,12,Rapid Redeployment,Basic,Gold,1,4,,Basic Skill,,"Choose one —
+• Move up to 3 spaces and place the Turret into a space adjacent to you; it counts as an obstacle.
+• Defeat a minion adjacent to you.",
+R1,8,Makeshift Minigun,I,Red,5,4,3+,Attack - Ranged,2,"Target a unit in range of both you and the Turret. If the target is in a straight line from you, and in a straight line from the Turret, gain +2 Attack.",
+R3B,9,Flame Belcher,III,Red,6,4,5,Attack - Ranged,4,"Target a unit in range adjacent to the Turret.
+May repeat up to two times on different enemy units.",Radius
+R3A,9,Supercharged Cannon,III,Red,6,4,4+,Attack - Ranged,3,"Target a unit in range of both you and the Turret. If the target is in a straight line from you, and in a straight line from the Turret, gain +3 Attack.",Defense
+B2A,10,Disruptor Pulse,II,Blue,4,3,,Skill,4,"This turn: Before any enemy hero in radius of the Turret performs a primary action, that hero discards a card, if able;
+if they discard a card, deactivate this effect.",Attack
+B1,10,Disruptor Jolt,I,Blue,3,3,,Skill,3,"This turn: Before any enemy hero in radius of the Turret performs a primary action, that hero discards a card, if able;
+if they discard a card, deactivate this effect.",
+S,5,Salvage Parts,Basic,Silver,2,,,Basic Skill,,"Choose one —
+• Place the Turret into a space adjacent to you; it counts as an obstacle.
+• Remove the Turret; move up to 3 spaces.
+• Remove the Turret; you may retrieve a discarded card.",
+G3B,2,Emergency Protocol,III,Green,3,2,,Skill,3,"Up to two enemy heroes in radius of the Turret discard a card, or are defeated.
+Remove the Turret.",Radius
+B3B,11,Deployable Bastion,III,Blue,4,3,,Skill,3,"Place up to 3 Barrier tokens in radius, with at least one of them adjacent to the Turret; you and friendly heroes gain +1 Defense for each Barrier token they are adjacent to.",Initiative
+G1,3,Early Prototype,I,Green,2,2,,Skill,2,"If you are in radius of the Turret, swap with a unit or a token in radius of the Turret, then remove the Turret.",
+P,,Unlimited Firepower,IV,Purple,,,,Ultimate,,"Gain +1 Range and +1 Radius.",
+B3A,11,Disruptor Grid,III,Blue,4,3,,Skill,4,"This turn: Before any enemy hero in radius of the Turret performs a primary action, that hero discards a card, or is defeated; if they discard a card, deactivate this effect.",Movement
+B2B,10,Deployable Barrier,II,Blue,4,3,,Skill,3,"Place up to 2 Barrier tokens in radius, with at least one of them adjacent to the Turret; you and friendly heroes gain +1 Defense for each Barrier token they are adjacent to.",Initiative
+G2A,3,Updated Design,II,Green,2,2,,Skill,2,"If you are in radius of the Turret, swap with a unit or a token in radius of the Turret.",Attack
+G3A,2,Perfected Design,III,Green,3,2,,Skill,2,"If you are in radius of the Turret, Choose one —
+• Swap with a unit or a token in radius of the Turret.
+• Place yourself into a space in radius of the Turret.",Attack
+G2B,3,Self-Destruct,II,Green,2,2,,Skill,3,"Up to two enemy heroes in radius of the Turret discard a card, if able. Remove the Turret.",Defense
+DH,12,Ramshackle Turret,H,Gold,1,4,,Basic Skill,,"Move up to 3 spaces and place the Turret into a space adjacent to you; it counts as an obstacle.
+(The Turret is not a token and remains in play between rounds.)",

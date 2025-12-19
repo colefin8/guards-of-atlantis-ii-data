@@ -1,7 +1,7 @@
 ID,Initiative,Card Name,Tier,Color,Defense,Movement,Attack,Action Type,Range/Radius,Card Text,Item Icon
-AuB,12,Shoot and Scoot,Basic,Gold,1,1,1,Basic Attack - Ranged,2,"Target a unit at maximum range.
+D,12,Shoot and Scoot,Basic,Gold,1,1,1,Basic Attack - Ranged,2,"Target a unit at maximum range.
 After the attack: If able, you may fast travel to an adjacent zone.",
-SB,13,Trailblazer,Basic,Silver,1,,,Basic Skill,4,"You may fast travel, if able.
+S,13,Trailblazer,Basic,Silver,1,,,Basic Skill,4,"You may fast travel, if able.
 This round: You and friendly heroes in radius may ignore obstacles while performing movement actions.",
 G2B,2,Divert Attention,II,Green,2,2,,Skill,,"Move an enemy unit adjacent to you up to 2 spaces; if you do, move up to that number of spaces in a straight line.",Initiative
 R1,9,Snap Shot,I,Red,5,5,3,Attack - Ranged,2,"Choose one —
@@ -25,6 +25,6 @@ B2B,10,Warning Shot,II,Blue,3,3,,Skill,3,"End of turn: An enemy hero in radius d
 G2,2,Fae Healing,II,Green,2,2,,Skill,4,"A hero in radius may retrieve a discarded card; if they do, that hero gains 1 coin.",Attack
 G3B,2,Lead Astray,III,Green,2,2,,Skill,,"Move an enemy unit adjacent to you up to 3 spaces; if you do, move up to that number of spaces in a straight line.",Movement
 G3,2,Nature's Blessing,III,Green,2,2,,Skill,4,"A hero in radius may retrieve a discarded card; if they do, that hero gains 2 coins.",Attack
-AuH,11,Keep the Distance,H,Gold,1,1,1,Basic Attack - Ranged,2,"Target a hero at maximum range.
+DH,11,Keep the Distance,H,Gold,1,1,1,Basic Attack - Ranged,2,"Target a hero at maximum range.
 After the attack: If able, you may fast travel to an adjacent zone.",
-P4,,Wild Hunt,IV,Purple,,,,Ultimate,,"Each time before you perform an action, you may move 2 spaces in a straight line.",
+P,,Wild Hunt,IV,Purple,,,,Ultimate,,"Each time before you perform an action, you may move 2 spaces in a straight line.",

@@ -1,0 +1,20 @@
+ID,Initiative,Card Name,Tier,Color,Defense,Movement,Attack,Action Type,Range/Radius,Card Text,Item Icon
+B1,9,Prowling Brute,I,Blue,5,1,,Movement,,"If enraged, after movement, you may swap with a unit or a token adjacent to you. This round: You are enraged.",
+B2A,10,Rampaging Beast,II,Blue,6,1,,Movement,,"If enraged, after movement, you may swap with a unit or a token adjacent to you; if you do, move up to 1 additional space. This round: You are enraged.",Defense
+B2B,10,Cold Ire,II,Blue,6,1+,,Movement,,"If enraged, gain +1 Movement. This round: You are enraged.",Attack
+B3A,10,Unstoppable Force,III,Blue,6,1,,Movement,,"If enraged, after movement, you may swap with a unit or a token adjacent to you; if you do, move up to 2 additional spaces. This round: You are enraged.",Radius
+B3B,10,Eyes of Flame,III,Blue,6,1+,,Movement,,"If enraged, gain +2 Movement. This round: You are enraged.",Radius
+D1,12,Claws That Catch,Basic,Gold,2,1,4,Basic Attack,,"Before the attack: If enraged, you may move 1 space to a space adjacent to an enemy hero. Target a unit adjacent to you. This round: You are enraged.",
+D2,7,Angry Roar,Basic,Gold,4,,,Basic Skill,,"If enraged, perform the primary action on one of your active cards with an active effect. This round: You are enraged.",
+DH,11,Jaws That Bite,H,Gold,1,1,3,Basic Attack,,"Before the attack: If enraged, you may move 1 space to a space adjacent to an enemy hero. Target a hero adjacent to you. This round: You are enraged.",
+G1,4,Sniff Out,I,Green,2,2,,Skill - Ranged,2,"If enraged, an enemy hero in range discards a card, if able.",
+G2A,3,Eyes On The Prey,II,Green,3,2,,Skill - Ranged,3,"If enraged, an enemy hero in range discards a card, if able.",Attack
+G2B,3,Instinctive Reaction,II,Green,3,2,,Skill,,"If enraged, choose one — * Perform the primary action on one of your discarded cards. * You may retrieve a discarded card.",Initiative
+G3A,3,Apex Predator,III,Green,3,2,,Skill - Ranged,3,"If enraged, an enemy hero in range discards a card, or is defeated.",Attack
+G3B,3,Evolutionary Response,III,Green,3,2,,Skill,,"If enraged, choose one, or both — * Perform the primary action on one of your discarded cards. * You may retrieve a discarded card.",Movement
+P1,,Unbound Fury,IV,Purple,,,,Ultimate,,"You are always enraged, and all your resolved cards count as active.",
+R1,8,Prey Drive,I,Red,7,3,5,Attack,3,"Target a unit adjacent to you. After the attack: If enraged, and the target was not removed, remove up to 1 enemy minion in radius. This round: You are enraged.",
+R2A,9,Prey Abundance,II,Red,7,3,6,Attack,4,"Target a unit adjacent to you. After the attack: If enraged, and the target was not removed, remove up to 1 enemy minion in radius. This round: You are enraged.",Defense
+R2B,9,Rip,II,Red,6,3,5,Attack,,"Target a unit adjacent to you. After the attack: If enraged, gain 1 coin. This round: You are enraged.",Initiative
+R3A,9,Feeding Frenzy,III,Red,8,3,6,Attack,4,"Target a unit adjacent to you. After the attack: If enraged, and the target was not removed, remove up to 2 enemy minions in radius. This round: You are enraged.",Defense
+R3B,9,Tear,III,Red,7,3,5,Attack,,"Target a unit adjacent to you. After the attack: If enraged, gain 2 coins; if you defeated a hero, that hero spends 1 additional Life counter. This round: You are enraged.",Initiative

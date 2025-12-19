@@ -1,7 +1,7 @@
 ID,Initiative,Card Name,Tier,Color,Defense,Movement,Attack,Action Type,Range/Radius,Card Text,Item Icon
 B2,10,Form Up!,II,Blue,6,3,,Skill - Ranged,3,"Move a friendly unit in range 1 space to a space closer to you.
 May repeat once.",Attack
-SB,13,Chilling Howl,Basic,Silver,3,,,Basic Skill,3,"You may discard one of your resolved cards.
+S,13,Chilling Howl,Basic,Silver,3,,,Basic Skill,3,"You may discard one of your resolved cards.
 This round: Enemy heroes in radius cannot fast travel, or move more than 2 spaces with a movement action.",
 G2,4,Make a Stand,II,Green,4,2,,Skill,4,"If there are at least two enemy heroes in radius, you may retrieve a discarded card.",Initiative
 G1,5,Hold Ground,I,Green,3,2,,Skill,3,"If there are at least two enemy heroes in radius, you may retrieve a discarded card.",
@@ -17,14 +17,14 @@ B2B,10,Threaten,II,Blue,6,3,,Skill - Ranged,2,"Move an enemy unit in range 1 spa
 May repeat once.",Defense
 G2B,4,Light Pilum,II,Green,4,2,,Skill - Ranged,2,"An enemy hero in range discards a card, if able. You may move 1 space.",Attack
 B1,9,Menace,I,Blue,6,3,,Skill - Ranged,2,Move an enemy unit in range 1 space to a space farther away from you.,
-P4,,Battle Fury,IV,Purple,,,,Ultimate,,"Each time after one of your resolved cards is discarded, you may perform its primary action.",
+P,,Battle Fury,IV,Purple,,,,Ultimate,,"Each time after one of your resolved cards is discarded, you may perform its primary action.",
 R3,8,Send Flying,III,Red,8,4,7,Attack,,"Target a unit adjacent to you. After the attack: You may move up to 2 spaces to a space adjacent to an enemy hero; if you do, push that hero 3 spaces, ignoring obstacles.",Radius
-AuB,11,Angry Strike,Basic,Gold,3,1,4+,Basic Attack,,"Target a unit adjacent to you;
+D,11,Angry Strike,Basic,Gold,3,1,4+,Basic Attack,,"Target a unit adjacent to you;
 +1 Attack for every card in your discard.",
 R3B,8,Hunt Down,III,Red,6,4,4,Attack,,"Choose one —
 • Before the attack: If you have one or more cards in the discard, move up to 3 spaces. Target a hero adjacent to you.
 • Target a unit adjacent to you.",Radius
-AuH,10,Angry Swipe,H,Gold,2,1,3+,Basic Attack,,"Target a hero adjacent to you;
+DH,10,Angry Swipe,H,Gold,2,1,3+,Basic Attack,,"Target a hero adjacent to you;
 +1 Attack for every card in your discard.",
 G3,4,Battle Ready,III,Green,4,2,,Skill,4,"If there are at least two enemy heroes in radius, you may retrieve up to two discarded cards.",Initiative
 B3,10,Testudo!,III,Blue,7,3,,Skill - Ranged,3,"Move a friendly unit in range 1 space to a space closer to you.

@@ -63,8 +63,8 @@ const sortedCards = computed(() => {
 
     if (sortColumn.value === 'id') {
       const idOrder: Record<string, number> = {
-        'AuB': 0,
-        'SB': 1,
+        'D': 0,
+        'S': 1,
         'B1': 2,
         'G1': 3,
         'R1': 4,
@@ -80,8 +80,8 @@ const sortedCards = computed(() => {
         'G3B': 14,
         'R3A': 15,
         'R3B': 16,
-        'P4A': 17,
-        'AuH': 18,
+        'P4': 17,
+        'DH': 18,
       }
       const aOrder = idOrder[String(aVal)] ?? 999
       const bOrder = idOrder[String(bVal)] ?? 999

@@ -1,0 +1,39 @@
+ID,Initiative,Card Name,Tier,Color,Defense,Movement,Attack,Action Type,Range/Radius,Card Text,Item Icon
+B1,9,Cold Snap,I,Blue,5,3,,Skill,2,"Choose a direction. Move each enemy unit in radius 1 space in that direction, if able.",
+B2B,10,Guardian Spirit,II,Blue,5,3,,Skill,4,"Up to 1 friendly hero in radius may retrieve a discarded card.
+If ""Guardian Spirit"" is in the discard, retrieve it.",Attack
+S,13,Commune With Spirits,Basic,Silver,2,,,Basic Skill,,"A friendly hero in play names a color; you may discard a card of that color.
+Perform the primary action on a card of that color in your discard.",
+G1,4,Glacial Barrier,I,Green,3,2,,Skill,3,"Place an Ice token in radius.
+Enemy heroes have -1 Initiative for every Ice token they are adjacent to.",
+R2B,9,Spirit Wolf,II,Red,3,4,3,Attack - Ranged,2,"Choose one —
+• If this card is not in the discard, target a unit in range.
+• Target a hero adjacent to you.",Radius
+B2A,10,Snowstorm,II,Blue,5,3,,Skill,3,"Choose a direction. Move each enemy unit in radius 1 space in that direction, if able.",Defense
+R1,8,Winter Dagger,I,Red,6,4,2+,Attack,,"Target a unit adjacent to you.
++3 Attack if this card is not in the discard.",
+R2A,9,Winter Spear,II,Red,6,4,3+,Attack,,"Target a unit adjacent to you.
++3 Attack if this card is not in the discard.",Initiative
+D,11,Ice Blast,Basic,Gold,1,1,3,Basic Attack,4,"Target a unit adjacent to you. If the target discards a card to defend, After the attack:
+Another enemy hero in radius discards a card of the same color, if able.",
+G2A,3,Wall of Frost,II,Green,3,2,,Skill,3,"Place up to 2 Ice tokens in radius.
+Enemy heroes have -1 Initiative for every Ice token they are adjacent to.",Radius
+B3A,10,Blizzard,III,Blue,6,3,,Skill,3,"Choose a direction. Move each enemy unit in radius 1 space in that direction, if able.
+If this card is in the discard, End of turn:
+May repeat once.",Movement
+G3A,3,Pack Ice,III,Green,4,2,,Skill,3,"Place up to 3 Ice tokens in radius.
+Enemy heroes have -1 Initiative for every Ice token they are adjacent to.",Attack
+R3A,9,Winter Scepter,III,Red,7,4,4+,Attack,,"Target a unit adjacent to you.
++3 Attack if this card is not in the discard.",Radius
+P,,Reign of Winter,IV,Purple,,,,Ultimate,4,"Each time after you defeat a minion with your basic attack, an enemy hero in radius discards a card of the color of your choice, if able.",
+DH,10,Ice Shard,H,Gold,1,1,2,Basic Attack,3,"Target a hero adjacent to you. If the target discards a card to defend, After the attack:
+Another enemy hero in radius discards a card of the same color, if able.",
+R3B,9,Spirit Bear,III,Red,4,4,3,Attack - Ranged,2,"Choose one, or both, on different targets —
+• If this card is not in the discard, target a unit in range.
+• Target a hero adjacent to you.",Defense
+G2B,3,Ancestral Totem,II,Green,3,2,,Skill - Ranged,2,"Place a Totem token in range.
+If a friendly melee minion adjacent to a Totem would be defeated, remove the Totem instead.",Movement
+B3B,10,Warrior Spirit,III,Blue,6,3,,Skill,4,"Up to 1 friendly hero in radius may retrieve a discarded card. If ""Warrior Spirit"" is in the discard, you may retrieve a discarded card.",Initiative
+G3B,3,Venerated Totem,III,Green,4,2,,Skill - Ranged,2,"Place a Totem token in range.
+If a friendly minion adjacent to a Totem would be defeated, remove the Totem instead.
+Totem tokens are immune to enemy actions.",Attack

@@ -1,5 +1,5 @@
 ID,Initiative,Card Name,Tier,Color,Defense,Movement,Attack,Action Type,Range/Radius,Card Text,Item Icon
-AuB,9,Mind Grip,Basic,Gold,2,1,,Basic Skill - Ranged,5,"Choose one —
+D,9,Mind Grip,Basic,Gold,2,1,,Basic Skill - Ranged,5,"Choose one —
 • Perform an action on the card in the previous turn slot of an enemy hero in range; if you would place any tokens this way, place Illusion tokens instead; skip giving markers.
 • Defeat a minion adjacent to you.",
 R3B,8,Devious Scheme,III,Red,6,3,4,Attack - Ranged,2,"Target a unit in range. After the attack:
@@ -11,7 +11,7 @@ B1,10,Imbue Doubt,I,Blue,4,2,,Skill,3,"Name a color. Next turn, after playing ca
 An enemy hero in radius discards a card of that color, if able.",
 B2,11,Time to Reconsider,II,Blue,5,2,,Skill,4,"Name a color. Next turn, after playing cards:
 An enemy hero in radius discards a card of that color, if able.",Attack
-SB,3,Diabolical Laughter,Basic,Silver,3,,,Basic Skill,4,"Laugh diabolically;
+S,3,Diabolical Laughter,Basic,Silver,3,,,Basic Skill,4,"Laugh diabolically;
 if you do, choose up to three times —
 • Swap with an Illusion token in radius.
 • Place an Illusion token in an adjacent space.
@@ -41,5 +41,5 @@ G3,5,Master of Illusions,III,Green,4,2,,Skill,3,"Place up to 3 Illusion tokens i
 You may swap with an Illusion token in play.",Initiative
 G3B,5,Illusionary Army,III,Green,4,2,,Skill,4,"Place up to 3 Illusion tokens in radius.
 This round: While you are performing actions, all Illusion tokens count as both tokens and friendly melee minions.",Attack
-P4,,What the Hell Are You?,IV,Purple,,,,Ultimate,5,"Each time after you laugh diabolically as part of performing an action, all enemy heroes in radius discard a card, or are defeated.",
-AuH,8,Mind Probe,H,Gold,1,1,,Basic Skill - Ranged,3,"Perform an action on the card in the previous turn slot of an enemy hero in range; if you would place any tokens this way, place Illusion tokens instead; do not use markers.",
+P,,What the Hell Are You?,IV,Purple,,,,Ultimate,5,"Each time after you laugh diabolically as part of performing an action, all enemy heroes in radius discard a card, or are defeated.",
+DH,8,Mind Probe,H,Gold,1,1,,Basic Skill - Ranged,3,"Perform an action on the card in the previous turn slot of an enemy hero in range; if you would place any tokens this way, place Illusion tokens instead; do not use markers.",

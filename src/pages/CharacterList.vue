@@ -51,7 +51,7 @@ const errorState = computed(() => {
       <div class="bg-slate-100 p-4 text-lg" v-if="errorState">{{ errorState }}</div>
       <div v-else class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
         <div v-for="character in filteredCharacters()" :key="character.name"
-          class="aspect-square bg-slate-300 rounded-lg flex flex-col items-center justify-center text-center p-4 cursor-pointer hover:shadow-lg hover:bg-slate-400 transition-all"
+          class="aspect-square bg-slate-300 rounded-lg flex flex-col items-center justify-center text-center p-4 cursor-pointer duration-300 hover:shadow-lg hover:bg-slate-100 transition-all"
           @click="goToCharacter(character.name)">
           <h3 class="text-2xl font-bold mb-2">{{ character.name }}</h3>
           <p class="text-lg font-semibold">{{ character.cardCount }} cards</p>

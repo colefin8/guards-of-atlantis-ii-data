@@ -1,0 +1,32 @@
+ID,Initiative,Card Name,Tier,Color,Defense,Movement,Attack,Action Type,Range/Radius,Card Text,Item Icon
+R2A,7,Bullrush,II,Red,8,3,6,Attack,,"Before the attack: Move 2 or 3 spaces in a straight line to a space adjacent to an enemy unit, then target that unit.",Initiative
+S,12,Bulwark,Basic,Silver,4,,,Basic Skill,4,"You may retrieve a discarded card.
+This turn: You and friendly units in radius cannot be moved, pushed, swapped or placed by enemy heroes.",
+R1,7,Mad Dash,I,Red,7,3,6,Attack,,"Before the attack: Move 2 spaces in a straight line to a space adjacent to an enemy unit, then target that unit.
+(If you cannot make this move, you cannot attack.)",
+G1,6,Shield,I,Green,4,2,,Skill,1,"This round: When any friendly minion in radius is defeated you may discard a silver card.
+If you do, the minion is not removed.
+(The enemy hero still gains the coins for defeating the minion.)",
+D,11,Onslaught,Basic,Gold,3,1,4,Basic Attack,,"Target a unit adjacent to you. After the attack: Move into the space it occupied, if able.",
+G2B,5,War Drummer,II,Green,5,2,,Skill - Ranged,4,"A friendly hero in range gains 1 coin;
+if any hero was defeated this round, that friendly hero gains 3 coins instead.",Defense
+R2B,7,Throwing Axe,II,Red,7,4,3,Attack - Ranged,2,"Choose one —
+• Target a unit adjacent to you.
+• You may discard a card; if you do, target a unit in range.",Defense
+B2B,9,Shield Bash,II,Blue,6,2,,Skill,,"An enemy hero adjacent to you who has played an attack card this turn discards a card, if able.",Attack
+B2A,9,Mighty Punch,II,Blue,6,2,,Skill,,"You may move 1 space. Push an enemy unit or a token adjacent to you up to 2 spaces.",Initiative
+B1,8,Brutal Jab,I,Blue,5,2,,Skill,,"You may move 1 space. Push an enemy unit or a token adjacent to you up to 1 space.",
+B3A,9,Savage Kick,III,Blue,6,2,,Skill,,"Move up to 2 spaces. Push an enemy unit or a token adjacent to you up to 2 spaces.",Initiative
+B3B,9,Counterattack,III,Blue,6,2,,Skill,,"An enemy hero adjacent to you who has played an attack card this turn discards a card, or is defeated.",Radius
+G3A,5,Fortify,III,Green,5,2,,Skill,2,"This round: When any friendly minion in radius is defeated you may discard a basic card.
+If you do, the minion is not removed.",Attack
+G2A,5,Bolster,II,Green,5,2,,Skill,2,"This round: When any friendly minion in radius is defeated you may discard a silver card.
+If you do, the minion is not removed.",Attack
+G3B,5,Master Skald,III,Green,5,2,,Skill - Ranged,4,"A friendly hero in range gains 2 coins;
+if any hero was defeated this round, that friendly hero gains 4 coins instead.",Defense
+P,,One Man Army,IV,Purple,,,,Ultimate,,"During minion battle you count as a heavy minion; if you would be removed, lose the push instead.",
+R3A,8,Furious Charge,III,Red,8,3,7,Attack,,"Before the attack: Move 2, 3, or 4 spaces in a straight line to a space adjacent to an enemy unit, then target that unit.",Movement
+DH,10,Leap Forward,H,Gold,3,1,3,Basic Attack,,"Target a hero adjacent to you. After the attack: Move into the space it occupied, if able.",
+R3B,8,Throwing Spear,III,Red,8,7,4,Attack - Ranged,2,"Choose one —
+• Target a unit adjacent to you.
+• You may discard a card. If you have a card in the discard, target a unit in range.",Radius
