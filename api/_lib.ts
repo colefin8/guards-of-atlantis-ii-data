@@ -1,70 +1,50 @@
-import { readFileSync } from "fs";
-import { resolve, join } from "path";
-import type { Card, Character } from "../types";
+import { get } from "@vercel/blob";
+import type { Card, Character, CharacterData } from "../types";
 
 let charactersData: Record<string, Card[]> | null = null;
 let spellsData: Card[] | null = null;
 
-function getDataPath(): string {
-  // Try multiple possible paths for data files
-  const possiblePaths = [
-    // Vercel production: files are in the same deployment
-    resolve(__dirname, "../public/data"),
-    // Local development: public directory
-    resolve(process.cwd(), "public/data"),
-  ];
-
-  for (const path of possiblePaths) {
-    try {
-      readFileSync(join(path, "characters.json"), "utf-8");
-      return path;
-    } catch {
-      // Continue to next path
-    }
-  }
-
-  console.error("Could not find data files in any path:", possiblePaths);
-  // Fallback - will fail when trying to read but with better error message
-  return possiblePaths[0];
-}
-
-export function loadCharactersData(): Record<string, Card[]> {
+export async function loadCharactersData(): Promise<Record<string, Card[]>> {
   if (charactersData) return charactersData;
 
   try {
-    const dataPath = getDataPath();
-    const jsonPath = join(dataPath, "characters.json");
-    const jsonContent = readFileSync(jsonPath, "utf-8");
+    const blob = await get("characters.json", { access: "public" });
+    const jsonContent = await blob.text();
     charactersData = JSON.parse(jsonContent);
     return charactersData || {};
   } catch (error) {
-    console.error("Error loading characters.json:", error);
+    console.error("Error loading characters.json from Blob:", error);
     return {};
   }
 }
 
-export function loadSpellsData(): Card[] {
+export async function loadSpellsData(): Promise<Card[]> {
   if (spellsData) return spellsData;
 
   try {
-    const dataPath = getDataPath();
-    const jsonPath = join(dataPath, "gydion-spells.json");
-    const jsonContent = readFileSync(jsonPath, "utf-8");
+    const blob = await get("gydion-spells.json", { access: "public" });
+    const jsonContent = await blob.text();
     spellsData = JSON.parse(jsonContent);
     return spellsData || [];
   } catch (error) {
-    console.error("Error loading gydion-spells.json:", error);
+    console.error("Error loading gydion-spells.json from Blob:", error);
     return [];
   }
 }
 
-export function getCharacterData(characterName: string): Card[] {
-  const data = loadCharactersData();
-  return data[characterName] || [];
+export async function getCharacterData(characterName: string): Promise<CharacterData> {
+  const data = await loadCharactersData();
+  const cards = data[characterName] || [];
+
+  return {
+    name: characterName,
+    cardCount: cards.length,
+    cards,
+  };
 }
 
-export function getCharacterNames(): Character[] {
-  const data = loadCharactersData();
+export async function getCharacterNames(): Promise<Character[]> {
+  const data = await loadCharactersData();
   return Object.keys(data).map((name) => ({
     name,
     cardCount: data[name].length,

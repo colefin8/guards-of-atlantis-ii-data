@@ -1,7 +1,7 @@
 import type { VercelRequest, VercelResponse } from "@vercel/node";
 import { loadSpellsData } from "./_lib";
 
-export default function handler(req: VercelRequest, res: VercelResponse) {
+export default async function handler(req: VercelRequest, res: VercelResponse) {
   res.setHeader("Access-Control-Allow-Origin", "*");
   res.setHeader("Access-Control-Allow-Methods", "GET, OPTIONS");
   res.setHeader("Access-Control-Allow-Headers", "Content-Type");
@@ -15,13 +15,13 @@ export default function handler(req: VercelRequest, res: VercelResponse) {
   }
 
   try {
-    const spells = loadSpellsData();
+    const spells = await loadSpellsData();
     res.status(200).json(spells);
   } catch (error) {
     console.error("Error in /api/spells:", error);
-    res.status(500).json({ 
+    res.status(500).json({
       error: "Internal server error",
-      details: error instanceof Error ? error.message : "Unknown error"
+      details: error instanceof Error ? error.message : "Unknown error",
     });
   }
 }

@@ -2,7 +2,7 @@ import type { VercelRequest, VercelResponse } from "@vercel/node";
 import { getCharacterData } from "../_lib";
 import type { CharacterData } from "../../types";
 
-export default function handler(req: VercelRequest, res: VercelResponse) {
+export default async function handler(req: VercelRequest, res: VercelResponse) {
   res.setHeader("Access-Control-Allow-Origin", "*");
   res.setHeader("Access-Control-Allow-Methods", "GET, OPTIONS");
   res.setHeader("Access-Control-Allow-Headers", "Content-Type");
@@ -23,23 +23,18 @@ export default function handler(req: VercelRequest, res: VercelResponse) {
   }
 
   try {
-    const cards = getCharacterData(characterName as string);
+    const character = await getCharacterData(characterName as string);
 
-    if (cards.length === 0) {
+    if (character.cardCount === 0) {
       return res.status(404).json({ error: `Character "${characterName}" not found` });
     }
-
-    const character: CharacterData = {
-      name: characterName as string,
-      cardCount: cards.length,
-      cards,
-    };
 
     res.status(200).json(character);
   } catch (error) {
     console.error(`Error in /api/characters/${characterName}:`, error);
-    res.status(500).json({ 
+    res.status(500).json({
       error: "Internal server error",
-      details: error instanceof Error ? error.message : "Unknown error"
+      details: error instanceof Error ? error.message : "Unknown error",
     });
   }
+}
