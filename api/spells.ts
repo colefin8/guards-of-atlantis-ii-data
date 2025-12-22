@@ -14,6 +14,14 @@ export default function handler(req: VercelRequest, res: VercelResponse) {
     return res.status(405).json({ error: "Method not allowed" });
   }
 
-  const spells = loadSpellsData();
-  res.status(200).json(spells);
+  try {
+    const spells = loadSpellsData();
+    res.status(200).json(spells);
+  } catch (error) {
+    console.error("Error in /api/spells:", error);
+    res.status(500).json({ 
+      error: "Internal server error",
+      details: error instanceof Error ? error.message : "Unknown error"
+    });
+  }
 }

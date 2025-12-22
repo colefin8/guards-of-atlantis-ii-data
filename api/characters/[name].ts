@@ -22,17 +22,24 @@ export default function handler(req: VercelRequest, res: VercelResponse) {
     return res.status(400).json({ error: "Character name required" });
   }
 
-  const cards = getCharacterData(characterName as string);
+  try {
+    const cards = getCharacterData(characterName as string);
 
-  if (cards.length === 0) {
-    return res.status(404).json({ error: `Character "${characterName}" not found` });
+    if (cards.length === 0) {
+      return res.status(404).json({ error: `Character "${characterName}" not found` });
+    }
+
+    const character: CharacterData = {
+      name: characterName as string,
+      cardCount: cards.length,
+      cards,
+    };
+
+    res.status(200).json(character);
+  } catch (error) {
+    console.error(`Error in /api/characters/${characterName}:`, error);
+    res.status(500).json({ 
+      error: "Internal server error",
+      details: error instanceof Error ? error.message : "Unknown error"
+    });
   }
-
-  const character: CharacterData = {
-    name: characterName as string,
-    cardCount: cards.length,
-    cards,
-  };
-
-  res.status(200).json(character);
-}

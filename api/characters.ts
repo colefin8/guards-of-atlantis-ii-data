@@ -14,6 +14,14 @@ export default function handler(req: VercelRequest, res: VercelResponse) {
     return res.status(405).json({ error: "Method not allowed" });
   }
 
-  const characters = getCharacterNames();
-  res.status(200).json(characters);
+  try {
+    const characters = getCharacterNames();
+    res.status(200).json(characters);
+  } catch (error) {
+    console.error("Error in /api/characters:", error);
+    res.status(500).json({ 
+      error: "Internal server error",
+      details: error instanceof Error ? error.message : "Unknown error"
+    });
+  }
 }

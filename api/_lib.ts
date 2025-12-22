@@ -8,9 +8,10 @@ let spellsData: Card[] | null = null;
 function getDataPath(): string {
   // Try multiple possible paths for data files
   const possiblePaths = [
-    resolve(process.cwd(), "public/data"),
+    // Vercel production: files are in the same deployment
     resolve(__dirname, "../public/data"),
-    join(__dirname, "../public/data"),
+    // Local development: public directory
+    resolve(process.cwd(), "public/data"),
   ];
 
   for (const path of possiblePaths) {
@@ -22,8 +23,9 @@ function getDataPath(): string {
     }
   }
 
-  // Fallback to first path
-  return resolve(process.cwd(), "public/data");
+  console.error("Could not find data files in any path:", possiblePaths);
+  // Fallback - will fail when trying to read but with better error message
+  return possiblePaths[0];
 }
 
 export function loadCharactersData(): Record<string, Card[]> {
