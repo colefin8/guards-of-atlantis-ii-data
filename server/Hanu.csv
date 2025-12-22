@@ -1,0 +1,44 @@
+ID,Initiative,Card Name,Tier,Color,Defense,Movement,Attack,Action Type,Range/Radius,Card Text,Item Icon
+G2A,2,Monkey Twist,II,Green,2,2,,Skill,2,"Swap two friendly units in radius.",Defense
+R1,9,Helping Hand,I,Red,4,5,3,Attack - Ranged,3,"Choose one —
+• Target a unit adjacent to you.
+• Target a hero in range, adjacent to your friendly hero.",
+S,12,Hurry Up!,Basic,Silver,1,,,Basic Skill - Ranged,4,"Set the printed Initiative value of an unresolved card of a hero in range to 11, until it is resolved, or otherwise changes state.
+( This may change the initiative order and tie breakers. )",
+B1,10,Unexpected Journey,I,Blue,4,3,,Skill,2,"Swap with an enemy hero in radius.
+This turn: That hero is immune.
+End of turn: Swap with that hero, regardless of radius and immunity.",
+G2B,2,Hear Nothing,II,Green,2,2,,Skill,3,"Swap with an enemy hero in radius.",Attack
+R2A,9,Even The Odds,II,Red,4,5,4,Attack - Ranged,4,"Choose one —
+• Target a unit adjacent to you.
+• Target a hero in range, adjacent to your friendly hero.",Initiative
+G1,2,Monkey Trick,I,Green,1,2,,Skill,1,"Swap two friendly units in radius.",
+B2B,11,This Way!,II,Blue,4,3,,Skill,3,"A friendly hero in radius chooses a distance of 1 or 2; move both of you that number of spaces in the same direction of your choice.
+( Both must be moved the full distance, or neither one moves. )",Initiative
+B2A,11,There And Back Again,II,Blue,4,3,,Skill,3,"Swap with an enemy hero in radius.
+This turn: That hero is immune.
+End of turn: Swap with that hero, regardless of radius and immunity.",Attack
+D,13,Fight And Flight,Basic,Gold,1,2,2,Basic Attack,,"Target a unit adjacent to you.
+If the target is not defeated, After the attack: If able, move 3 spaces in a straight line.",
+DH,12,Fight Or Flight,H,Gold,1,1,1,Basic Skill,,"Target a hero adjacent to you.
+If the target is not defeated, After the attack:
+If able, move 3 spaces in a straight line.",Attack
+B3B,11,That Way!,III,Blue,5,3,,Skill,3,"A friendly hero in radius chooses a distance of 1, 2 or 3; move both of you that number of spaces in the same direction of your choice.
+( Both must be moved the full distance, or neither one moves. )",Initiative
+R3A,10,Trusted Sidekick,III,Red,5,5,4,Attack - Ranged,4,"Choose one, or both, in any order —
+• Target a unit adjacent to you.
+• Target a hero in range, adjacent to your friendly hero and not adjacent to you.",Movement
+B3A,11,Safe Travels,III,Blue,5,3,,Skill,3,"Swap with an enemy hero in radius.
+This turn: That hero is immune.
+End of turn: Swap with that hero, regardless of radius and immunity. You may move 1 space.",Attack
+R2B,9,Outnumber,II,Red,5,5,5,Attack - Ranged,4,"Choose one —
+• Target a unit adjacent to you.
+• Target a minion in range, adjacent to your friendly hero.",Defense
+R3B,10,Pile On,III,Red,6,5,5,Attack - Ranged,4,"Choose one, or both, in any order —
+• Target a unit adjacent to you.
+• Target a minion in range, adjacent to your friendly hero.",Radius
+G3B,1,See Nothing,III,Green,2,2,,Skill,3,"Swap with an enemy hero in radius.
+You may move 1 space.",Radius
+G3A,1,Monkey Business,III,Green,2,2,,Skill,2,"Swap two friendly units in radius.
+You may move 1 space.",Defense
+P,,The Ultimate Trick,IV,Purple,,,,Ultimate,,"You choose the next action, and how it is performed, for a hero you target with the “Hurry Up!”.",

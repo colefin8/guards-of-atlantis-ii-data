@@ -1,0 +1,35 @@
+ID,Initiative,Card Name,Tier,Color,Defense,Movement,Attack,Action Type,Range/Radius,Card Text,Item Icon
+B1,10,Dodge,I,Blue,!,3,,Defense,,Block a ranged attack.,
+B2A,11,Sidestep,II,Blue,!,3,,Defense,,"Block a ranged attack.
+You may move 1 space.",Attack
+B2B,11,Parry,II,Blue,!,3,,Defense,,"Block a non-ranged attack.
+The attacker discards a card, if able.",Defense
+B3A,11,Evade,III,Blue,!,3,,Defense,,"Block a ranged attack.
+You may move 1 space. You may retrieve your resolved or discarded basic skill card.",Attack
+B3B,11,Riposte,III,Blue,!,3,,Defense,,"Block a non-ranged attack. The attacker discards a card, or is defeated.",Radius
+D1,13,Blink Strike,Basic,Gold,1,1,3,Basic Attack,,"Before the attack: Move 2 spaces in a straight line through an enemy unit; target that unit.
+(If you cannot make this move, you cannot attack.)",
+DH,12,Nimble Strike,H,Gold,1,1,2,Basic Attack,,Before the attack: Move 2 spaces in a straight line through an enemy hero; target that hero.,
+G1,2,Light-Fingered,I,Green,1,3,,Skill,,"You may move 1 space.
+Take 1 coin from an enemy hero adjacent to you; if you do, you may move 1 space.",
+G2A,2,Pick Pocket,II,Green,1,3,,Skill,,"Move up to 2 spaces.
+Take 1 coin from an enemy hero adjacent to you; if you do, you may move 1 space.",Attack
+G2B,2,Poisoned Dagger,II,Green,1,3,,Skill - Ranged,3,"Give a hero in range a Poison marker.
+The hero with a poison marker has -1 Initiative, -1 Attack and -1 Defense.",Initiative
+G3A,1,Master Thief,III,Green,2,3,,Skill,,"Move up to 2 spaces. Take 1 or 2 coins from an enemy hero adjacent to you; if you do, you may move up to 2 spaces.",Movement
+G3B,1,Poisoned Dart,III,Green,2,3,,Skill - Ranged,3,"Give a hero in range a Poison marker.
+The hero with a poison marker has -2 Initiative, -2 Attack and -2 Defense.",Initiative
+P1,,Cloak And Daggers,IV,Purple,,,,Ultimate,,"After you perform a basic action, you may repeat it once; if you repeat an attack action, you cannot target the same unit.",
+R1,9,Hit And Run,I,Red,3,4,3,Attack,,"Target a unit adjacent to you.
+After the attack: You may move 1 space.",
+R2A,9,Combat Reflexes,II,Red,3,4,4,Attack,,"Before the attack: You may move 1 space.
+Target a unit adjacent to you.
+After the attack: If you did not move before the attack, you may move 1 space.",Initiative
+R2B,9,Backstab,II,Red,5,5,5+,Attack,,"Target a unit adjacent to you; if a friendly unit is adjacent to the target, +2 Attack.
+(A ""friendly unit"" is another hero or a minion on your team.)",Defense
+R3A,10,Leaping Strike,III,Red,4,4,4,Attack,,"Before the attack: You may move 1 space.
+Target a unit adjacent to you.
+After the attack: You may move 1 space.",Radius
+R3B,10,Backstab With A Ballista,III,Red,6,5,5+,Attack - Ranged,1,"Target a unit in range;
+if a friendly unit is adjacent to the target +2 Attack, and the target cannot perform a primary action to defend.",Defense
+S1,6,Blend Into Shadows,Basic,Silver,2,,,Basic Skill,2,"If you are adjacent to terrain, place yourself into a space in radius; if you do, Next turn: You are immune to enemy attack actions.",

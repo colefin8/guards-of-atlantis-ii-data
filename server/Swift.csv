@@ -2,12 +2,12 @@ ID,Initiative,Card Name,Tier,Color,Defense,Movement,Attack,Action Type,Range/Rad
 D,6,Reload!,Basic,Gold,1,1,,Basic Skill,,"Choose one —
 • Perform the primary action of your rightmost resolved card.
 • Defeat a minion adjacent to you.",
-B2A,10,Assault Jump,II,Blue,4,2,,Skill,4,"Place yourself into a space in a straight line in radius. Push an enemy unit adjacent to you up to 2 spaces.",Attack
-B1,9,Steam Jump,I,Blue,3,2,,Skill,3,"Place yourself into a space in a straight line in radius. Push an enemy unit adjacent to you up to 1 space.",
+B2A,10,Assault Jump,II,Blue,4,2,,Skill,4,Place yourself into a space in a straight line in radius. Push an enemy unit adjacent to you up to 2 spaces.,Attack
+B1,9,Steam Jump,I,Blue,3,2,,Skill,3,Place yourself into a space in a straight line in radius. Push an enemy unit adjacent to you up to 1 space.,
 S,12,Bounce,Basic,Silver,2,,,Basic Skill,,"Move 2 spaces in a straight line, ignoring obstacles; if this card is already resolved as you perform this action, may repeat once.",
 G1,4,Suppress,I,Green,2,2,,Skill,3,"An enemy hero in radius who is not adjacent to terrain discards a card, if able.",
 R1,8,Snipe,I,Red,4,4,5,Attack - Ranged,4,"Target a unit at maximum range, and in a straight line.",
-B2B,10,Delayed Jump,II,Blue,4,1,,Skill,2,"End of turn: Place yourself into a space in radius not in a straight line from you.",Defense
+B2B,10,Delayed Jump,II,Blue,4,1,,Skill,2,End of turn: Place yourself into a space in radius not in a straight line from you.,Defense
 R2B,8,Shotgun,II,Red,6,4,4,Attack - Ranged,2,"Target a unit in range. Before the attack: An enemy hero adjacent to the target discards a card, if able.",Initiative
 R2A,8,Prepared Shot,II,Red,5,4,5,Attack - Ranged,4,"Target a unit in range, in a straight line, and not adjacent to you.",Defense
 P,,Bullet Time,IV,Purple,,,,Ultimate,,"After you resolve a basic card, you may perform the primary action on that card; you cannot target the same enemy hero twice in the same turn this way.",
@@ -18,7 +18,7 @@ Next turn: The first time an enemy minion in radius is defeated, gain 1 coin.",I
 R3B,9,Super-Shotgun,III,Red,6,4,5,Attack - Ranged,2,"Target a unit in range. Before the attack: An enemy hero adjacent to the target discards a card, or is defeated.",Radius
 G3A,3,Killing Ground,III,Green,3,2,,Skill,4,"An enemy hero in radius who is not adjacent to terrain discards a card, or is defeated.",Radius
 DH,6,Backup,H,Gold,1,1,,Basic Skill,,"Perform the primary action of your rightmost resolved card. If you perform an Attack action this way, you cannot target minions.",
-B3A,10,Drop Trooper,III,Blue,4,2,,Skill,4,"Place yourself into a space in a straight line in radius. Push up to two enemy units adjacent to you up to 2 spaces.",Attack
+B3A,10,Drop Trooper,III,Blue,4,2,,Skill,4,Place yourself into a space in a straight line in radius. Push up to two enemy units adjacent to you up to 2 spaces.,Attack
 G3B,3,Hunting Season,III,Green,3,2,,Skill,4,"Move up to two enemy minions in radius, up to 3 spaces each, to spaces in radius.
 Next turn: The first two times an enemy minion in radius is defeated, gain 1 coin.",Initiative
 R3A,9,Killshot,III,Red,5,4,6,Attack - Ranged,5,"Target a unit in range, in a straight line, and not adjacent to you.",Defense

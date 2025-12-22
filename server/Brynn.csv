@@ -1,0 +1,41 @@
+ID,Initiative,Card Name,Tier,Color,Defense,Movement,Attack,Action Type,Range/Radius,Card Text,Item Icon
+D,11,Home Turf,H,Gold,1,1,2,Basic Skill - Ranged,2,"Choose one —
+* Target a hero adjacent to you.
+* Target a hero in range who is adjacent to 3 or more obstacles.
+( You, other heroes, minions, tokens, and terrain are obstacles. )",
+DH,12,Familiar Ground,Basic,Gold,2,1,2,Basic Attack - Ranged,3,"Choose one —
+* Target a unit adjacent to you.
+* Target a hero in range who is adjacent to 3 or more obstacles.
+( You, other heroes, minions, tokens, and terrain are obstacles. )",
+S,1,Decoy,Basic,Silver,2,,,Basic Skill,4,"Choose up to two times, on different targets —
+* Move an enemy minion in radius 1 space.
+* Move an enemy hero in radius who is adjacent to 3 or more obstacles 1 space.",
+G1,3,Bear Trap,I,Green,3,2,,Skill,3,"Choose one —
+* An enemy hero adjacent to you discards a card, if able.
+* An enemy hero in radius who is adjacent to 3 or more obstacles discards a card, if able.",
+G2A,2,Log Trap,II,Green,3,2,,Skill,4,"Choose one —
+* An enemy hero adjacent to you discards a card, if able.
+* An enemy hero in radius who is adjacent to 3 or more obstacles discards a card, if able.",Initiative
+G2B,2,True Grit,II,Green,3,2,,Skill,4,"You may retrieve a discarded attack card.
+If an enemy hero in radius is adjacent to 3 or more obstacles, move up to 3 spaces.",Attack
+G3A,2,Deadfall Trap,III,Green,4,2,,Skill,4,"Choose one —
+* An enemy hero adjacent to you discards a card, or is defeated.
+* An enemy hero in radius who is adjacent to 3 or more obstacles discards a card, or is defeated.",Initiative
+G3B,2,Die Hard,III,Green,4,2,,Skill,4,"You may retrieve a discarded attack card.
+If an enemy hero in radius is adjacent to 3 or more obstacles, move up to 4 spaces.",Movement
+R1,9,High Ground,I,Red,6,4,4+,Attack,,"Target a unit adjacent to you.
+If you target a hero adjacent to 3 or more obstacles, +2 attack.",
+R2A,9,Elevated Ambush,II,Red,6,4,5+,Attack,,"Target a unit adjacent to you.
+If you target a hero adjacent to 3 or more obstacles, +2 attack.",Initiative
+R2B,9,Split Attack,II,Red,3,4,3,Attack - Ranged,2,"Target a unit in range. If you target a hero who is adjacent to 3 or more obstacles, may repeat once on a different unit adjacent to you.",Defense
+R3A,10,Peak Precision,III,Red,7,4,5+,Attack,,"Target a unit adjacent to you.
+If you target a hero adjacent to 3 or more obstacles, +2 attack and After the attack: You may retrieve this card.",Radius
+R3B,10,Split Throw,III,Red,4,4,3,Attack - Ranged,2,"Target a unit in range. If you target a hero who is adjacent to 3 or more obstacles, may repeat once on a different unit.",Defense
+B1,10,Tread Lightly,I,Blue,5,3,,Skill,2,"Swap with either a unit adjacent to you, or with an enemy hero in radius who is adjacent to 3 or more obstacles.",
+B2A,10,Cover Tracks,II,Blue,5,3,,Skill,3,"Swap with either a unit adjacent to you, or with an enemy hero in radius who is adjacent to 3 or more obstacles.
+You may move 1 space.",Defense
+B2B,10,Mountain Guide,II,Blue,5,3,,Skill,4,"You may move a friendly unit, which is adjacent to you, up to 2 spaces. If an enemy hero in radius is adjacent to 3 or more obstacles, move a different friendly unit in radius up to 2 spaces.",Attack
+B3A,11,Hide Traces,III,Blue,6,3,,Skill,3,"Swap with either a unit adjacent to you, or with an enemy hero in radius who is adjacent to 3 or more obstacles.
+Move up to 2 spaces.",Radius
+B3B,11,Expedition Leader,III,Blue,6,3,,Skill,4,"You may move a friendly unit, which is adjacent to you, up to 3 spaces. If an enemy hero in radius is adjacent to 3 or more obstacles, move a different friendly unit in radius up to 3 spaces.",Attack
+P,,Over The Top,IV,Purple,,,,Ultimate,,"While you are performing actions, all enemy heroes in play count as being adjacent to 3 or more obstacles.",

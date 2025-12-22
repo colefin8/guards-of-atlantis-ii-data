@@ -1,0 +1,44 @@
+ID,Initiative,Card Name,Tier,Color,Defense,Movement,Attack,Action Type,Range/Radius,Card Text,Item Icon
+S,4,Mystic Saplings,Basic,Silver,4,,,Basic Skill,3,Place up to 3 [Tree] Tree tokens in radius; Tree tokens are not removed at the end of round.,
+D,11,Tree Slam,Basic,Gold,3,1,4,Basic Attack - Ranged,2,"Choose one —
+• Target a minion adjacent to you.
+• Remove a [Tree] Tree token adjacent to you.
+Target a unit in range.",
+DH,10,Makeshift Weapon,H,Gold,2,1,3,Basic Attack - Ranged,2,"Choose one —
+• Target a hero adjacent to you.
+• Remove a [Tree] Tree token adjacent to you.
+Target a hero in range.",
+P,,March Of Nature,IV,Purple,,,,Ultimate,3,"Each time after you resolve a card, you may place a [Tree] Tree token in radius.",
+B1,8,Gifts Of Nature,I,Blue,5,2,,Skill,3,"Remove a [Tree] Tree token in radius.
+You may retrieve a discarded card.",
+B2A,9,Tree Of Plenty,II,Blue,6,2,,Skill,4,"Remove a [Tree] Tree token in radius.
+Choose one —
+• You may retrieve a discarded card.
+• A friendly hero in radius may retrieve a discarded card.",Attack
+B2B,9,Claim Dominance,II,Blue,6,2,,Skill,,"This round: Up to 1 enemy minion adjacent to you does not count towards the minion total during minion battle, regardless of immunity.",Initiative
+B3A,9,Abundance,III,Blue,6,2,,Skill,4,"Remove a [Tree] Tree token in radius.
+Choose one or both —
+• You may retrieve a discarded card.
+• A friendly hero in radius may retrieve a discarded card.",Radius
+B3B,9,Assert Dominance,III,Blue,6,2,,Skill,,"This round: Up to 2 enemy minions adjacent to you do not count towards the minion total during minion battle, regardless of immunity.",Movement
+G1,6,Toss Away,I,Green,4,2,,Skill - Ranged,3,"Place a token, or an enemy unit, adjacent to you into a space in range.",
+G2A,5,Mighty Throw,II,Green,4,2,,Skill - Ranged,4,"Place a token, or an enemy unit, adjacent to you into a space in range.",Attack
+G2B,5,Into The Canopy,II,Green,4,2,,Skill,2,"Choose one —
+• Swap with a [Tree] Tree token in radius.
+• Swap a friendly unit in radius with a Tree token in radius.",Defense
+G3A,5,Monstrous Throw,III,Green,5,2,,Skill - Ranged,4,"Place a token, or an enemy unit, adjacent to you into a space in range.
+May repeat once.",Attack
+G3B,5,Treetop Ride,III,Green,5,2,,Skill,2,"Choose up to two times —
+• Swap with a [Tree] Tree token in radius.
+• Swap a friendly unit in radius with a Tree token in radius.",
+R1,7,Nature's Protector,I,Red,7,4,5,Attack - Ranged,2,"Choose one —
+• Target a hero adjacent to you.
+• Target a unit in range adjacent to a [Tree] Tree token.",
+R2A,7,Nature's Guardian,II,Red,8,4,5,Attack - Ranged,3,"Choose one —
+• Target a hero adjacent to you.
+• Target a unit in range adjacent to a [Tree] Tree token.",Initiative
+R2B,7,Trample,II,Red,7,4,,Movement,,"If you move in a straight line: You may ignore obstacles; each enemy hero you moved through discards a card, or is defeated; defeat up to one minion you moved through.",Defense
+R3A,8,Nature's Champion,III,Red,8,4,6,Attack - Ranged,3,"Choose one, or both, on different targets —
+• Target a hero adjacent to you.
+• Target a unit in range adjacent to a [Tree] Tree token.",Initiative
+R3B,8,Angry Stampede,III,Red,7,4,,Movement,,"If you move in a straight line: You may ignore obstacles; each enemy hero you moved through discards a card, or is defeated; defeat up to two minions you moved through.",Movement

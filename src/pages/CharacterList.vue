@@ -15,7 +15,7 @@ const error = ref('')
 
 onMounted(async () => {
   try {
-    const response = await fetch('http://localhost:3001/api/characters')
+    const response = await fetch('/api/characters')
     if (!response.ok) throw new Error('Failed to fetch characters')
     characters.value = await response.json()
   } catch (err) {

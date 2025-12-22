@@ -1,0 +1,70 @@
+ID,Initiative,Card Name,Tier,Color,Defense,Movement,Attack,Action Type,Range/Radius,Card Text,Item Icon
+R1,7,Elementary Evocation,I,Red,6,3,,Skill,,"Cast the ""Burning Hands"" spell in the spellbook.
+( Burn multiple opponents in near vicinity. )",
+G2B,4,Lesser Conjuration,II,Green,3,2,,Skill,,"Choose and cast one spell in the spellbook —
+• ""Find Familiar""
+• ""Dimension Door""
+( Summon a familiar to assist you. Travel to a faraway place. )",Attack
+S1,13,Prepare Spells,Basic,Silver,2,,,Basic Skill,,"Add all spell cards to the spellbook. Only Gydion can look at the cards in the spellbook.
+As each spell is cast, remove it from the spellbook faceup. The action on the spell card is performed by the hero casting the spell.",
+B2A,10,Lesser Enchantment,II,Blue,4,2,,Skill,,"Choose and cast one spell in the spellbook —
+• ""Suggestion""
+• ""Dominate Person""
+( Turn the dominated person against their own troops. )",Defense
+B1,9,Elementary Enchantment,I,Blue,3,2,,Skill,,"Cast the ""Suggestion"" spell in the spellbook.
+( Compel the opposing champion to take a few extra steps. )",
+G1,5,Elementary Abjuration,I,Green,2,2,,Skill,,"Cast the ""Shield"" spell in the spellbook.
+( The magic shield protects against mundane threats. )",
+B2B,10,Lesser Transmutation,II,Blue,4,2,,Skill,,"Choose and cast one spell in the spellbook —
+• ""Midas Touch""
+• ""Disintegrate""
+( Create gold. Turn objects and lesser creatures into dust. )",Attack
+D1,11,Cantrip,Basic,Gold,1,,,Basic Skill,,"Choose and cast one spell in the spellbook —
+• ""Shocking Grasp"" ( To repel a foe! )
+• ""Magic Missile"" ( To blast at range! )
+• ""Expeditious Retreat"" ( To dart a great distance! )",
+G2A,4,Lesser Abjuration,II,Green,3,2,,Skill,,"Choose and cast one spell in the spellbook —
+• ""Shield""
+• ""Banishment""
+( Touch anything to have it banished where you please. )",Initiative
+R2B,8,Lesser Necromancy,II,Red,6,3,,Skill,,"Choose and cast one spell in the spellbook —
+• ""Vampiric Touch""
+• ""Create Undead""
+( Harm your foe to heal yourself. Raise an undead servant. )",Initiative
+G3B,4,Greater Conjuration,III,Green,3,2,,Skill,,"Choose and cast one spell in the spellbook —
+• ""Find Familiar""
+• ""Dimension Door""
+• ""Cloud Kill""
+( Create a deadly cloud within distance to weaken your foe. )",Movement
+R2A,8,Lesser Evocation,II,Red,6,3,,Skill,,"Choose and cast one spell in the spellbook —
+• ""Burning Hands""
+• ""Fireball""
+( Wait for your allies to clear the area before hurling a fireball! )",Defense
+B3A,10,Greater Enchantment,III,Blue,4,2,,Skill,,"Choose and cast one spell in the spellbook —
+• ""Suggestion""
+• ""Dominate Person""
+• ""Power Word Kill""
+( Command a weakened foe within earshot to perish instantly. )",Radius
+R3A,8,Greater Evocation,III,Red,7,3,,Skill,,"Choose and cast one spell in the spellbook —
+• ""Burning Hands""
+• ""Fireball""
+• ""Sunburst""
+( Sunburst’s reach and power grows with every cast spell. )",Defense
+B3B,10,Greater Transmutation,III,Blue,4,2,,Skill,,"Choose and cast one spell in the spellbook —
+• ""Midas Touch""
+• ""Disintegrate""
+• ""Polymorph""
+( Polymorph enemies into creatures or objects and vice versa. )",Attack
+R3B,8,Greater Necromancy,III,Red,7,3,,Skill,,"Choose and cast one spell in the spellbook —
+• ""Vampiric Touch""
+• ""Create Undead""
+• ""Energy Drain""
+( Drain energy from a foe in sight to restore your vitality. )",Radius
+DH,10,Cheap Trick,H,Gold,1,,,Basic Skill,,"Cast the ""Expeditious Retreat"" spell in the spellbook.
+( To dart a great distance! )",
+G3A,4,Greater Abjuration,III,Green,3,2,,Skill,,"Choose and cast one spell in the spellbook —
+• ""Shield""
+• ""Banishment""
+• ""Invulnerability""
+( Invulnerability makes you impervious to deadly perils. )",Initiative
+P4,,The Archwizard,IV,Purple,,,,Ultimate,,"Whenever you would add cards to the spellbook, you may cast the ""Wish"" spell in the spellbook instead.",

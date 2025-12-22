@@ -9,7 +9,7 @@ R2B,7,Throwing Axe,II,Red,7,4,3,Attack - Ranged,2,"Choose one — * Target a uni
 B2B,9,Shield Bash,II,Blue,6,2,,Skill,,"An enemy hero adjacent to you who has played an attack card this turn discards a card, if able.",Attack
 B2A,9,Mighty Punch,II,Blue,6,2,,Skill,,You may move 1 space. Push an enemy unit or a token adjacent to you up to 2 spaces.,Initiative
 B1,8,Brutal Jab,I,Blue,5,2,,Skill,,You may move 1 space. Push an enemy unit or a token adjacent to you up to 1 space.,
-B3A,9,Savage Kick,III,Blue,6,2,,Skill,,"Move up to 2 spaces. Push an enemy unit or a token adjacent to you up to 2 spaces.",Initiative
+B3A,9,Savage Kick,III,Blue,6,2,,Skill,,Move up to 2 spaces. Push an enemy unit or a token adjacent to you up to 2 spaces.,Initiative
 B3B,9,Counterattack,III,Blue,6,2,,Skill,,"An enemy hero adjacent to you who has played an attack card this turn discards a card, or is defeated.",Radius
 G3A,5,Fortify,III,Green,5,2,,Skill,2,"This round: When any friendly minion in radius is defeated you may discard a basic card. If you do, the minion is not removed.",Attack
 G2A,5,Bolster,II,Green,5,2,,Skill,2,"This round: When any friendly minion in radius is defeated you may discard a silver card. If you do, the minion is not removed.",Attack

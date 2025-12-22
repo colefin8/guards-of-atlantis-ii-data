@@ -3,27 +3,7 @@ import { ref, onMounted } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import CardTable from '../components/CardTable.vue'
 import CardModal from '../components/CardModal.vue'
-
-interface Card {
-  id: string
-  initiative: string | number
-  cardName: string
-  tier: string
-  color: string
-  defense?: string
-  movement?: string
-  attack?: string
-  actionType: string
-  rangeRadius?: string
-  cardText: string
-  itemIcon?: string
-}
-
-interface CharacterData {
-  name: string
-  cardCount: number
-  cards: Card[]
-}
+import type { Card, CharacterData } from '../../types'
 
 const route = useRoute()
 const router = useRouter()
@@ -35,7 +15,7 @@ const selectedCard = ref<Card | null>(null)
 onMounted(async () => {
   const characterName = route.params.name as string
   try {
-    const response = await fetch(`http://localhost:3001/api/characters/${characterName}`)
+    const response = await fetch(`/api/characters/${characterName}`)
     if (!response.ok) throw new Error('Character not found')
     characterData.value = await response.json()
     console.log(characterData.value?.cards)
@@ -66,8 +46,8 @@ const closeModal = () => {
 
       <CardTable :cards="characterData.cards" @select-card="openCardDetail" />
 
-      <CardModal v-if="selectedCard" :card="selectedCard" :all-cards="characterData.cards" @close="closeModal"
-        @select-card="openCardDetail" />
+      <CardModal v-if="selectedCard" :card="selectedCard" :all-cards="characterData.cards"
+        :character-name="characterData.name" @close="closeModal" @select-card="openCardDetail" />
     </div>
   </div>
 </template>

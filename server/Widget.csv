@@ -1,0 +1,31 @@
+ID,Initiative,Card Name,Tier,Color,Defense,Movement,Attack,Action Type,Range/Radius,Card Text,Item Icon
+G1,4,Fiery Breath,I,Green,1,2,,Skill - Range,2,"An enemy hero in range of Pyro and in a straight line from Pyro discards a card, if able.",
+B2B,10,Drag Off,II,Blue,3,3,,Skill,,"Move both Pyro, and an enemy unit adjacent to Pyro, either 2 or 3 spaces each, in the same direction.",Attack
+S,6,Dragon Bond,Basic,Silver,6,,,Basic Skill,2,"Choose one —
+• Place Pyro into a space in radius.
+Pyro counts as a token, but is not removed at the end of round.
+• If Pyro is in play, move both yourself and Pyro up to 2 spaces, in any order.",
+R1,8,Diversionary Strike,I,Red,6,4,5,Attack,,"Target a unit adjacent to you.
+After the attack: Move Pyro up to 2 spaces.",
+R3B,9,Airborne Assault,III,Red,5,4,4,Attack,3,"Before the attack: You may swap with Pyro in radius. Target a unit adjacent to you.
+After the attack: You may swap with Pyro in radius.",Radius
+R2B,8,Airborne Attack,II,Red,4,4,3,Attack,3,Before the attack: You may swap with Pyro in radius. Target a unit adjacent to you.,Defense
+D,11,Fight As One,Basic,Gold,2,1,4,Basic Attack,,"Target a unit adjacent to you.
+After the attack: You may perform the primary action on one of your resolved skill cards, targeting a different unit.",
+R3A,9,Diversionary Assault,III,Red,7,4,6,Attack,,"Target a unit adjacent to you. After the attack:
+Move Pyro up to 4 spaces.",Initiative
+R2A,8,Diversionary Attack,II,Red,6,4,5,Attack,,"Target a unit adjacent to you.
+After the attack: Move Pyro up to 3 spaces.",Initiative
+B1,9,All Aboard,I,Blue,3,3,,Skill - Ranged,2,Swap Pyro in range with yourself or with a friendly hero in range.,
+DH,10,Follow Along,H,Gold,1,2,3,Basic Attack,,"Target a hero adjacent to you.
+After the attack: You may perform the primary action on one of your resolved skill cards, targeting a different unit.",
+G3B,3,Gnaw,III,Green,2,2,,Skill - Ranged,3,"Defeat a minion in range adjacent to Pyro.
+Remove Pyro.",Movement
+P,,Dragon Knight,IV,Purple,,,,Ultimate,,"Each time after you perform a movement action, you may perform the primary action on one of your faceup skill cards.",
+B2A,10,Take-Off,II,Blue,3,3,,Skill - Ranged,3,Swap Pyro in range with yourself or with a friendly hero in range.,Defense
+G2A,4,Flaming Breath,II,Green,2,2,,Skill - Ranged,3,"An enemy hero in range of Pyro and in a straight line from Pyro discards a card, if able.",Attack
+B3B,10,Carry Away,III,Blue,4,3,,Skill,,"Move both Pyro, and an enemy unit adjacent to Pyro, either 2 or 3 spaces each, in the same direction, ignoring obstacles.",Radius
+G2B,4,Nibble,II,Green,2,2,,Skill - Ranged,3,Remove an enemy minion in range adjacent to Pyro. Remove Pyro.,Initiative
+B3A,10,Safe Landing,III,Blue,4,3,,Skill - Ranged,3,"You may move Pyro in range 1 space.
+Swap Pyro in range with yourself or with a friendly hero in range.",Defense
+G3A,3,Scorching Breath,III,Green,2,2,,Skill - Ranged,3,"An enemy hero in range of Pyro and in a straight line from Pyro discards a card, or is defeated.",Attack

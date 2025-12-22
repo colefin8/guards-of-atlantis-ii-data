@@ -1,0 +1,35 @@
+ID,Initiative,Card Name,Tier,Color,Defense,Movement,Attack,Action Type,Range/Radius,Card Text,Item Icon
+S,5,Throw the Gauntlet,Basic,Silver,3,,,Basic Skill - Ranged,4,"Place yourself into a space in range adjacent to an enemy hero in range; that hero may move 1 space; if they do, gain 2 coins.",
+D,11,Code of Chivalry,Basic,Gold,2,1,4,Basic Attack,,"Target a unit adjacent to you.
+Before the attack: If you target a hero, both you and the target may retrieve a discarded card.",
+DH,10,Earn the Spurs,H,Gold,1,1,4,Basic Attack,,"Target a hero adjacent to you.
+Before the attack: Both you and the target may retrieve a discarded card.",
+R1,8,Token of Gratitude,I,Red,6,4,5,Attack,1,"Target a unit adjacent to you. After the attack:
+A friendly hero in radius gains 1 coin.",
+R2A,8,Fair Share,II,Red,6,4,6,Attack,3,"Target a unit adjacent to you. After the attack:
+A friendly hero in radius gains 1 coin.",Initiative
+R2B,8,Feat of Bravery,II,Red,7,4,7,Attack,4,"Target a unit adjacent to you.
+After the attack: A friendly hero in radius may retrieve a discarded card.",Defense
+R3A,9,Paragon of Grace,III,Red,7,4,6,Attack,3,"Target a unit adjacent to you. After the attack:
+A friendly hero in radius gains 1 coin.
+May repeat once on a different target.",Radius
+R3B,9,Paragon of Valor,III,Red,8,4,7,Attack,4,"Target a unit adjacent to you.
+After the attack: A friendly hero in radius may retrieve a discarded card; if they do, you may repeat once on a different target.",Defense
+G1,4,Close Quarters,I,Green,3,2,,Movement,2,"After movement, if you are adjacent to an enemy hero, you may Choose one —
+• Place a friendly minion in radius into a space adjacent to that enemy hero.
+• Place an enemy minion in radius into a space adjacent to you.",
+G2A,4,Melee,II,Green,4,2,,Movement,3,"After movement, if you are adjacent to an enemy hero, you may Choose one —
+• Place a friendly minion in radius into a space adjacent to that enemy hero.
+• Place an enemy minion in radius into a space adjacent to you.",Attack
+G2B,4,Opening Shots,II,Green,4,2,,Skill,3,"If both you and an enemy hero in radius have no cards in the discard, that hero discards a card, if able.",Initiative
+G3A,3,Grand Melee,III,Green,4,2,,Movement,3,"After movement, if you are adjacent to an enemy hero, Choose up to two times —
+• Place a friendly minion in radius into a space adjacent to that enemy hero.
+• Place an enemy minion in radius into a space adjacent to you.",Attack
+G3B,3,Opening Volley,III,Green,4,2,,Skill,3,"If both you and an enemy hero in radius have no cards in the discard, that hero discards a card, if able. May repeat once.",Initiative
+B1,9,Stand Guard,I,Blue,6,2,,Skill - Ranged,3,"Swap with a friendly unit in range which is adjacent to an enemy hero, or who has a card in the discard.",
+B2A,10,Protect the Weak,II,Blue,6,2,,Skill - Ranged,4,"Swap with a friendly unit in range which is adjacent to an enemy hero, or who has a card in the discard.",Attack
+B2B,10,Accept Surrender,II,Blue,6,2,,Skill,, "Defeat an enemy hero adjacent to you with no cards in hand.",Defense
+B3A,10,Defend the Innocent,III,Blue,7,2,,Skill - Ranged,4,"Swap with a friendly unit in range which is adjacent to an enemy hero, or who has a card in the discard.
+You may retrieve a discarded card.",Radius
+B3B,10,Glorious Triumph,III,Blue,7,2,,Skill,, "Defeat an enemy hero adjacent to you with no cards in hand; your friendly heroes gain triple assist coins.",Movement
+P,,Fabled Lance,IV,Purple,,,,Ultimate,2,"All your attack actions gain the “Ranged” subtype, target a unit in range, and count as having a printed Range value of 2.",

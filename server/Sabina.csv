@@ -1,0 +1,36 @@
+ID,Initiative,Card Name,Tier,Color,Defense,Movement,Attack,Action Type,Range/Radius,Card Text,Item Icon
+R3A,9,Dead Shot,III,Red,7,4,3+,Attack - Ranged,2,Target a unit in range. +4 Attack if the target played an attack card this turn.,Movement
+S,8,Back To Back,Basic,Silver,2,,,Basic Skill,2,Swap with a friendly minion in radius.,
+R1,8,Quickdraw,I,Red,6,4,2+,Attack - Ranged,2,Target a unit in range. +3 Attack if the target played an attack card this turn.,
+R3B,9,Bullet Hell,III,Red,7,4,3,Attack - Ranged,2,"Target a unit in range. After the attack:
+If the target was adjacent to you, remove up to two enemy minions adjacent to you.",Radius
+R2A,9,Gunslinger,II,Red,6,4,3+,Attack - Ranged,2,Target a unit in range. +3 Attack if the target played an attack card this turn.,Initiative
+B1,9,Listen Up,I,Blue,3,3,,Skill,1,Swap two minions in radius.,
+R2B,9,Shootout,II,Red,6,4,3,Attack - Ranged,2,"Target a unit in range. After the attack:
+If the target was adjacent to you, remove up to one enemy minion adjacent to you.
+(You gain no coins for removing a minion, only for defeating.)",Defense
+G1,4,Troop Movement,I,Green,2,2,,Skill,2,"Move a friendly minion in radius 1 space,
+to a space in radius. May repeat once.",
+G2B,3,Close Support,II,Green,3,2,,Skill,3,"An enemy hero in radius adjacent to your
+friendly minion discards a card, if able.",Initiative
+D,12,Point Blank Shot,Basic,Gold,2,1,2,Basic Attack - Ranged,1,"Target a unit in range. After the attack:
+If the target is adjacent to you, push it 1 space.",
+B3B,10,Unwavering Resolve,III,Blue,4,3,,Skill,2,"If there are two or more friendly minions in
+radius, you may retrieve a discarded card;
+if you do, move up to 2 spaces.",Defense
+G3B,3,Covering Fire,III,Green,3,2,,Skill,3,"An enemy hero in radius adjacent to your
+friendly minion discards a card, or is defeated.",Initiative
+DH,11,Bang,H,Gold,1,1,1,Basic Attack,," ""Target a hero adjacent to you. After the attack: Push the target 1 space.""",
+G2A,3,Marching Orders,II,Green,3,2,,Skill,3,"Move a friendly minion in radius 1 space,
+to a space in radius. May repeat once.",Attack
+B2B,10,Steady Advance,II,Blue,4,3,,Skill,2,"If there are two or more friendly minions in
+radius, you may retrieve a discarded card;
+if you do, you may move 1 space.",Defense
+B2A,10,Roger Roger,II,Blue,4,3,,Skill,2,Swap two minions in radius.,Attack
+P,,Big Sodding Gun,IV,Purple,,,,Ultimate,,"Your basic attack has +2 Range and
++2 Attack. If you push an enemy hero,
+that hero discards a card, or is defeated.",
+B3A,10,Ready And Waiting,III,Blue,4,3,,Skill,2,"Swap two minions in radius,
+ignoring heavy minion immunity.",Attack
+G3A,3,Path To Victory,III,Green,3,2,,Skill,3,"Move a friendly minion in radius 1 space, to a
+space in radius. May repeat up to two times.",Radius

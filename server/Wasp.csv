@@ -1,0 +1,26 @@
+ID,Initiative,Card Name,Tier,Color,Defense,Movement,Attack,Action Type,Range/Radius,Card Text,Item Icon
+R2A,9,Electrocute,II,Red,6,4,5,Attack,3,"Target a unit adjacent to you.
+After the attack: An enemy hero in radius and not adjacent to you discards a card, if able.",Initiative
+B1,10,Lift Up,I,Blue,5,3,,Skill,2,"Move a unit, or a token, in radius 1 space, without moving it away from you or closer to you. May repeat once on the same target.",
+B2B,10,Kinetic Repulse,II,Blue,5,3,,Skill,,"Push up to 2 enemy units adjacent to you 3 spaces; if a pushed hero is stopped by an obstacle, that hero discards a card, if able.",Attack
+S,13,Static Barrier,Basic,Silver,2,,,Basic Skill,2,"This turn: While an enemy hero outside of radius is performing an action, spaces in radius count as obstacles. While an enemy hero in radius is performing an action, spaces outside of radius count as obstacles.",
+B2A,10,Control Gravity,II,Blue,5,3,,Skill,3,"Move a unit, or a token, in radius 1 space, without moving it away from you or closer to you. May repeat once on the same target.",Defense
+G2A,3,Deflect Projectiles,II,Green,2,,,Defense - Ranged,3,"Block a ranged attack; if you do, an enemy hero in range, other than the attacker, discards a card, if able.",Initiative
+R1,8,Shock,I,Red,6,4,5,Attack,2,"Target a unit adjacent to you.
+After the attack: An enemy hero in radius and not adjacent to you discards a card, if able.",
+G2B,3,Telekinesis,II,Green,3,2,,Skill - Ranged,3,"Place a unit or a token in range, which is not in a straight line, into a space adjacent to you.",Attack
+G1,3,Stop Projectiles,I,Green,2,,,Defense - Ranged,,Block a ranged attack.,
+D,12,Magnetic Dagger,Basic,Gold,2,1,3,Basic Attack,3,"Target a unit adjacent to you.
+After the attack: This turn: Enemy units in radius cannot be swapped or placed by themselves or by enemy heroes.",
+DH,11,Crackling Dagger,H,Gold,1,1,2,Basic Attack,3,"Target a hero adjacent to you.
+After the attack: This turn: Enemy units in radius cannot be swapped or placed by themselves or by enemy heroes.",
+B3B,11,Kinetic Blast,III,Blue,6,3,,Skill,,"Push up to 2 enemy units adjacent to you 3 or 4 spaces; if a pushed hero is stopped by an obstacle, that hero discards a card, if able.",Radius
+G3B,2,Mass Telekinesis,III,Green,4,2,,Skill - Ranged,3,"Place a unit or a token in range, which is not in a straight line, into a space adjacent to you. May repeat once.",Attack
+B3A,11,Center of Mass,III,Blue,6,3,,Skill,3,"Move a unit, or a token, in radius 1 space, without moving it away from you or closer to you. May repeat up to two times on the same target.",Defense
+R2B,9,Charged Boomerang,II,Red,3,4,3,Attack - Ranged,3,"Target a unit in range and not in a straight line.
+(Units adjacent to you are in a straight line from you.)",Defense
+R3A,9,Electroblast,III,Red,7,4,6,Attack,3,"Target a unit adjacent to you. After the attack: An enemy hero in radius and not adjacent to you discards a card, or is defeated.",Initiative
+R3B,9,Thunder Boomerang,III,Red,4,4,4,Attack - Ranged,3,"Target a unit in range and not in a straight line.
+After the attack: If you targeted a hero, may repeat once on a different target.",Movement
+P,,High Voltage,IV,Purple,,,3,Ultimate,,"Each time after you perform a basic skill, you may defeat an enemy minion in radius; an enemy hero who was adjacent to that minion discards a card, if able.",
+G3A,2,Reflect Projectiles,III,Green,2,2,,Defense - Ranged,3,"Block a ranged attack; if you do, an enemy hero in range discards a card, if able.",Radius

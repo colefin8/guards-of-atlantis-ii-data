@@ -21,7 +21,7 @@ G3B,2,Emergency Protocol,III,Green,3,2,,Skill,3,"Up to two enemy heroes in radiu
 Remove the Turret.",Radius
 B3B,11,Deployable Bastion,III,Blue,4,3,,Skill,3,"Place up to 3 Barrier tokens in radius, with at least one of them adjacent to the Turret; you and friendly heroes gain +1 Defense for each Barrier token they are adjacent to.",Initiative
 G1,3,Early Prototype,I,Green,2,2,,Skill,2,"If you are in radius of the Turret, swap with a unit or a token in radius of the Turret, then remove the Turret.",
-P,,Unlimited Firepower,IV,Purple,,,,Ultimate,,"Gain +1 Range and +1 Radius.",
+P,,Unlimited Firepower,IV,Purple,,,,Ultimate,,Gain +1 Range and +1 Radius.,
 B3A,11,Disruptor Grid,III,Blue,4,3,,Skill,4,"This turn: Before any enemy hero in radius of the Turret performs a primary action, that hero discards a card, or is defeated; if they discard a card, deactivate this effect.",Movement
 B2B,10,Deployable Barrier,II,Blue,4,3,,Skill,3,"Place up to 2 Barrier tokens in radius, with at least one of them adjacent to the Turret; you and friendly heroes gain +1 Defense for each Barrier token they are adjacent to.",Initiative
 G2A,3,Updated Design,II,Green,2,2,,Skill,2,"If you are in radius of the Turret, swap with a unit or a token in radius of the Turret.",Attack

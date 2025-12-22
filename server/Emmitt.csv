@@ -10,7 +10,7 @@ G3B,5,Future Proof,III,Green,3,2,,Skill,4,"Choose one —
 • This turn: Friendly heroes in radius are immune to enemy actions.",Initiative
 B1,8,Time Snare,I,Blue,3,2,,Skill - Ranged,2,"An enemy hero in range who has already resolved a card this turn discards a card, if able.",
 B2A,9,Time Trap,II,Blue,4,2,,Skill - Ranged,3,"An enemy hero in range who has already resolved a card this turn discards a card, if able.",Defense
-B2B,9,Time Loop,II,Blue,4,2,,Skill - Ranged,4,"Swap with an enemy hero in range who has already resolved a card this turn.",Radius
+B2B,9,Time Loop,II,Blue,4,2,,Skill - Ranged,4,Swap with an enemy hero in range who has already resolved a card this turn.,Radius
 B3A,9,Time Bomb,III,Blue,4,2,,Skill - Ranged,3,"An enemy hero in range who has already resolved a card this turn discards a card, or is defeated.",Movement
 B3B,9,Time Warp,III,Blue,4,2,,Skill - Ranged,4,"Choose one —
 • Swap with an enemy hero in range who has already resolved a card this turn.

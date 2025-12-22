@@ -1,0 +1,36 @@
+ID,Initiative,Card Name,Tier,Color,Defense,Movement,Attack,Action Type,Range/Radius,Card Text,Item Icon
+B3A,11,Team Spirit,III,Blue,3,3,,Skill - Ranged,4,"Swap with a friendly hero in range.
+Move another one of you up to 3 spaces.",Radius
+R3A,10,Ransack,III,Red,4,4,5,Attack,3,"Target a unit adjacent to you.
+After the attack: For each other one of you in radius, you may retrieve a discarded card.",Movement
+R2A,9,Rummage,II,Red,4,4,4,Attack,3,"Target a unit adjacent to you.
+After the attack: If there is another one of you in radius, you may retrieve a discarded card.
+(All of you share cards in hand, deck, and discard.)",Initiative
+G3A,1,Wire Dancers,III,Green,2,2,,Movement,,"After you move, move another one of you up to 3 spaces.",Initiative
+R2B,9,Hit and Gone,II,Red,4,4,4,Attack,,"Target a unit adjacent to you. After the attack:
+You may remove one or more of you in play, except the last one of you.",Defense
+G3B,1,Spectacle,III,Green,2,2,,Skill - Ranged,2,"Swap with a minion in range.
+May repeat once by another one of you, targeting a different minion.",Attack
+R3B,10,Into Thin Air,III,Red,4,4,5,Attack,,"Target a unit adjacent to you.
+After the attack: You may remove one or more of you in play, including all of you.
+(If all are removed, you are not defeated. Respawn as normal.)",Radius
+DH,12,Stunted Doubles,H,Gold,1,1,1,Basic Attack,1,"Target a hero adjacent to you. After the attack:
+Spawn up to 3 more of you in radius; each of you is the same hero, except when actions are performed. If defeated, remove all of you.",
+P,,Twin Strike,IV,Purple,,,,Ultimate,,"After you perform a basic attack action, another one of you may repeat it once, targeting a different unit.",
+B3B,11,Aaaand It's Gone!,III,Blue,3,3,,Skill,,"Push a unit adjacent to you up to 3 spaces;
+for every space the target moved, move this one of you one space in the opposite direction.",Defense
+B2B,11,Magic Trick,II,Blue,3,3,,Skill,,"Push a unit adjacent to you up to 2 spaces;
+for every space the target moved, move this one of you one space in the opposite direction.",Defense
+B1,10,Alleyoop,I,Blue,2,3,,Skill - Ranged,3,"Swap with a friendly hero in range.
+Move another one of you up to 1 space.",
+G1,2,Tightrope,I,Green,1,2,,Movement,,"After you move, you may move another one of you 1 space.",
+G2A,2,High Wire,II,Green,2,2,,Movement,,"After you move, move another one of you up to 2 spaces.",Initiative
+B2A,11,Group Performance,II,Blue,3,3,,Skill - Ranged,4,"Swap with a friendly hero in range.
+Move another one of you up to 2 spaces.",Radius
+S,13,Crowd Control,Basic,Silver,1+,,,Basic Defense / Skill,3,"When used as a defense action, +2 Defense for each other one of you in radius.
+When used as a skill action, remove all other you in play.",
+D,13,Stunt Doubles,Basic,Gold,1,1,2,Basic Attack,1,"Target a unit adjacent to you. After the attack:
+Spawn up to 3 more of you in radius; each of you is the same hero, except when actions are performed. If defeated, remove all of you.",
+R1,9,Phantom Strike,I,Red,3,4,4,Attack,,"Target a unit adjacent to you. After the attack:
+If there is more than one of you in play, you may remove one of you.",
+G2B,2,Theatrics,II,Green,2,2,,Skill - Ranged,2,Swap with a minion in range.,Attack
