@@ -1,16 +1,10 @@
 {
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
-  "public": true,
-  "cleanUrls": true,
   "rewrites": [
     {
-      "source": "/api/:path*",
-      "destination": "/api/:path*"
-    },
-    {
       "source": "/:path*",
-      "destination": "/:path*/index.html"
+      "destination": "/index.html"
     }
   ],
   "functions": {
