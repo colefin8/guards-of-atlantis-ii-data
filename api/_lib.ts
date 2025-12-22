@@ -1,4 +1,3 @@
-import { download } from "@vercel/blob/client.js";
 import type { Card, Character, CharacterData } from "../types.js";
 
 let charactersData: Record<string, Card[]> | null = null;
@@ -9,8 +8,9 @@ export async function loadCharactersData(): Promise<Record<string, Card[]>> {
 
   try {
     const charactersUrl = "https://6qhgyijpbswffjr6.public.blob.vercel-storage.com/characters.json";
-    const blob = await download(charactersUrl);
-    const jsonContent = await blob.text();
+    const response = await fetch(charactersUrl);
+    if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+    const jsonContent = await response.text();
     charactersData = JSON.parse(jsonContent);
     return charactersData || {};
   } catch (error) {
@@ -24,8 +24,9 @@ export async function loadSpellsData(): Promise<Card[]> {
 
   try {
     const spellsUrl = "https://6qhgyijpbswffjr6.public.blob.vercel-storage.com/gydion-spells.json";
-    const blob = await download(spellsUrl);
-    const jsonContent = await blob.text();
+    const response = await fetch(spellsUrl);
+    if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+    const jsonContent = await response.text();
     spellsData = JSON.parse(jsonContent);
     return spellsData || [];
   } catch (error) {
