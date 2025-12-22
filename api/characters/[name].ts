@@ -1,6 +1,6 @@
 import type { VercelRequest, VercelResponse } from "@vercel/node";
-import { getCharacterData } from "../_lib";
-import type { CharacterData } from "../../types";
+import { getCharacterData } from "../_lib.js";
+import type { CharacterData } from "../../types.js";
 
 export default async function handler(req: VercelRequest, res: VercelResponse) {
   res.setHeader("Access-Control-Allow-Origin", "*");

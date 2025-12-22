@@ -1,5 +1,5 @@
-import { get } from "@vercel/blob";
-import type { Card, Character, CharacterData } from "../types";
+import { download } from "@vercel/blob/client.js";
+import type { Card, Character, CharacterData } from "../types.js";
 
 let charactersData: Record<string, Card[]> | null = null;
 let spellsData: Card[] | null = null;
@@ -8,7 +8,8 @@ export async function loadCharactersData(): Promise<Record<string, Card[]>> {
   if (charactersData) return charactersData;
 
   try {
-    const blob = await get("characters.json", { access: "public" });
+    const charactersUrl = "https://6qhgyijpbswffjr6.public.blob.vercel-storage.com/characters.json";
+    const blob = await download(charactersUrl);
     const jsonContent = await blob.text();
     charactersData = JSON.parse(jsonContent);
     return charactersData || {};
@@ -22,7 +23,8 @@ export async function loadSpellsData(): Promise<Card[]> {
   if (spellsData) return spellsData;
 
   try {
-    const blob = await get("gydion-spells.json", { access: "public" });
+    const spellsUrl = "https://6qhgyijpbswffjr6.public.blob.vercel-storage.com/gydion-spells.json";
+    const blob = await download(spellsUrl);
     const jsonContent = await blob.text();
     spellsData = JSON.parse(jsonContent);
     return spellsData || [];
