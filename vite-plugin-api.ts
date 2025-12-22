@@ -3,19 +3,19 @@ import { resolve } from "path";
 import type { ViteDevServer } from "vite";
 
 interface Card {
-  id: string
-  initiative: string | number
-  cardName: string
-  tier: string
-  color: string
-  defense?: string
-  movement?: string
-  attack?: string
-  actionType: string
-  rangeRadius?: string
-  cardText: string
-  flavorText?: string
-  itemIcon?: string
+  id: string;
+  initiative: string | number;
+  cardName: string;
+  tier: string;
+  color: string;
+  defense?: string;
+  movement?: string;
+  attack?: string;
+  actionType: string;
+  rangeRadius?: string;
+  cardText: string;
+  flavorText?: string;
+  itemIcon?: string;
 }
 
 let charactersData: Record<string, Card[]> | null = null;
