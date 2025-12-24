@@ -19,6 +19,7 @@ async function uploadData() {
     const charsBlob = await put("characters.json", charactersContent, {
       access: "public",
       contentType: "application/json",
+      allowOverwrite: true,
     });
     console.log("✓ characters.json uploaded:", charsBlob.url);
 
@@ -26,6 +27,7 @@ async function uploadData() {
     const spellsBlob = await put("gydion-spells.json", spellsContent, {
       access: "public",
       contentType: "application/json",
+      allowOverwrite: true,
     });
     console.log("✓ gydion-spells.json uploaded:", spellsBlob.url);
 
