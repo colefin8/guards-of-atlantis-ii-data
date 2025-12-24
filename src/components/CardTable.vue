@@ -101,7 +101,6 @@ const handleSort = (column: SortColumn) => {
     sortColumn.value = column
     sortDirection.value = 'asc'
   }
-  hasManualOrder.value = false
 }
 
 const getSortIndicator = (column: SortColumn) => {

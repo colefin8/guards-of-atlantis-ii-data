@@ -52,7 +52,7 @@ const errorState = computed(() => {
       <div v-else class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
         <div v-for="character in filteredCharacters()" :key="character.name"
           tabindex="0"
-          class="aspect-square bg-slate-300 rounded-lg flex flex-col items-center justify-center text-center p-4 cursor-pointer duration-300 hover:shadow-lg hover:bg-slate-100 transition-all"
+          class="aspect-[2/1] md:aspect-square bg-slate-300 rounded-lg flex flex-col items-center justify-center text-center p-4 cursor-pointer duration-300 hover:shadow-lg hover:bg-slate-100 transition-all"
           @keydown.enter="goToCharacter(character.name)"
           @keydown.space="goToCharacter(character.name)"
           @click="goToCharacter(character.name)">
