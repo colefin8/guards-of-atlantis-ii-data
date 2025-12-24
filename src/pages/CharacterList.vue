@@ -57,7 +57,6 @@ const errorState = computed(() => {
           @keydown.space="goToCharacter(character.name)"
           @click="goToCharacter(character.name)">
           <h3 class="text-2xl font-bold mb-2">{{ character.name }}</h3>
-          <p class="text-lg font-semibold">{{ character.cardCount }} cards</p>
           <p class="text-sm mt-2">General Stats go here</p>
           <p class="text-sm">Image Background eventually</p>
         </div>
