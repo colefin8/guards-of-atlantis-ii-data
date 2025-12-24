@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { computed, ref, onMounted } from 'vue'
+import { getColorClasses } from '../utils/colorMap'
 import type { Card, Spell } from '../../types'
 import StatBox from './StatBox.vue'
 import SectionBox from './SectionBox.vue'
@@ -20,19 +21,6 @@ defineEmits<{
   close: []
   'select-card': [card: Card]
 }>()
-
-const getColorClasses = (color: string) => {
-  const colorMap: Record<string, { bg: string }> = {
-    Red: { bg: 'bg-red-100' },
-    Blue: { bg: 'bg-blue-100' },
-    Green: { bg: 'bg-green-100' },
-    Black: { bg: 'bg-gray-100' },
-    Gold: { bg: 'bg-yellow-100' },
-    Silver: { bg: 'bg-slate-100' },
-    Purple: { bg: 'bg-purple-100' },
-  }
-  return colorMap[color] || { bg: 'bg-slate-100' }
-}
 
 const getTierProgression = (currentTier: string): { prev: string | null; next: string | null } => {
   const tierOrder = ['Basic', 'I', 'II', 'III', 'IV', 'H']
@@ -99,7 +87,8 @@ const updateReferencedSpells = () => {
 <template>
   <div class="fixed inset-0 bg-black/80 flex items-center justify-center z-50 p-4" @click="$emit('close')">
     <div class="rounded-lg shadow-lg w-full max-w-2xl max-h-[90vh] overflow-y-auto bg-slate-400" @click.stop>
-      <div :class="[getColorClasses(card.color).bg, 'text-gray-800 p-3 sm:p-4 rounded-t-lg flex justify-between items-center']">
+      <div
+        :class="[getColorClasses(card.color).bg, 'text-gray-800 p-3 sm:p-4 rounded-t-lg flex justify-between items-center']">
         <h3 class="text-lg sm:text-2xl font-bold">{{ card.cardName }}</h3>
         <button class="text-xl sm:text-2xl hover:opacity-80" @click="$emit('close')">✕</button>
       </div>

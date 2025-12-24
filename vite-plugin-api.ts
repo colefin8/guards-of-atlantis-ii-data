@@ -53,7 +53,6 @@ export function apiPlugin() {
   return {
     name: "api-plugin",
     configureServer(server: ViteDevServer) {
-      // Use pre to run BEFORE other middlewares
       server.middlewares.use((req, res, next) => {
         const url = req.url || "";
 
@@ -61,7 +60,6 @@ export function apiPlugin() {
           return next();
         }
 
-        // Enable CORS
         res.setHeader("Access-Control-Allow-Origin", "*");
         res.setHeader("Access-Control-Allow-Methods", "GET, POST, OPTIONS");
         res.setHeader("Access-Control-Allow-Headers", "Content-Type");
@@ -72,7 +70,6 @@ export function apiPlugin() {
           return;
         }
 
-        // Extract path without query string
         const path = url.split("?")[0];
 
         if (path === "/api/characters" && req.method === "GET") {

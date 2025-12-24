@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { ref, computed } from 'vue'
+import { getColorClasses } from '../utils/colorMap'
 import type { Spell } from '../../types'
 
 type SortColumn = 'id' | 'cardName' | 'tier' | 'actionType' | 'attack' | 'rangeRadius'
@@ -69,19 +70,6 @@ const getSortIndicator = (column: SortColumn) => {
   if (sortColumn.value !== column) return ''
   return sortDirection.value === 'asc' ? ' ▲' : ' ▼'
 }
-
-const getColorClasses = (color: string) => {
-  const colorMap: Record<string, { bg: string; border: string; header: string; text: string; hover: string }> = {
-    Red: { bg: 'bg-red-100', border: 'border-red-600', header: 'bg-red-600', text: 'text-red-700', hover: 'hover:bg-red-200' },
-    Blue: { bg: 'bg-blue-100', border: 'border-blue-600', header: 'bg-blue-600', text: 'text-blue-700', hover: 'hover:bg-blue-200' },
-    Green: { bg: 'bg-green-100', border: 'border-green-600', header: 'bg-green-600', text: 'text-green-700', hover: 'hover:bg-green-200' },
-    Black: { bg: 'bg-gray-100', border: 'border-gray-800', header: 'bg-gray-800', text: 'text-gray-800', hover: 'hover:bg-gray-200' },
-    Gold: { bg: 'bg-yellow-100', border: 'border-yellow-600', header: 'bg-yellow-600', text: 'text-yellow-700', hover: 'hover:bg-yellow-200' },
-    Silver: { bg: 'bg-slate-100', border: 'border-slate-500', header: 'bg-slate-500', text: 'text-slate-700', hover: 'hover:bg-slate-200' },
-    Purple: { bg: 'bg-purple-100', border: 'border-purple-600', header: 'bg-purple-600', text: 'text-purple-700', hover: 'hover:bg-purple-200' },
-  }
-  return colorMap[color] || { bg: 'bg-slate-100', border: 'border-slate-600', header: 'bg-slate-600', text: 'text-slate-700', hover: 'hover:bg-slate-200' }
-}
 </script>
 
 <template>
@@ -118,7 +106,6 @@ const getColorClasses = (color: string) => {
         <tbody>
           <tr v-for="spell in sortedSpells" :key="spell.cardName" :class="[
             getColorClasses(spell.color).bg,
-            getColorClasses(spell.color).border,
             getColorClasses(spell.color).hover,
             'border-2 transition-all cursor-pointer',
           ]" @click="emit('select-spell', spell)">

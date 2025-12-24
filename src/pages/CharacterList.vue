@@ -41,20 +41,15 @@ const errorState = computed(() => {
 
 <template>
   <div class="p-4">
-    <h2 class="text-2xl font-bold mb-4">Characters</h2>
-
     <div class="rounded-lg bg-sky-100 w-fit">
       <input class="text-m p-4 rounded-lg" v-model="searchQuery" type="text" placeholder="Search characters..." />
     </div>
     <div class="bg-slate-400 mt-4 p-4 rounded-lg">
-
       <div class="bg-slate-100 p-4 text-lg" v-if="errorState">{{ errorState }}</div>
       <div v-else class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-        <div v-for="character in filteredCharacters()" :key="character.name"
-          tabindex="0"
+        <div v-for="character in filteredCharacters()" :key="character.name" tabindex="0"
           class="aspect-[2/1] md:aspect-square bg-slate-300 rounded-lg flex flex-col items-center justify-center text-center p-4 cursor-pointer duration-300 hover:shadow-lg hover:bg-slate-100 transition-all"
-          @keydown.enter="goToCharacter(character.name)"
-          @keydown.space="goToCharacter(character.name)"
+          @keydown.enter="goToCharacter(character.name)" @keydown.space="goToCharacter(character.name)"
           @click="goToCharacter(character.name)">
           <h3 class="text-2xl font-bold mb-2">{{ character.name }}</h3>
           <p class="text-sm mt-2">General Stats go here</p>
