@@ -42,7 +42,13 @@ const closeModal = () => {
     <div v-if="loading" class="text-lg">Loading character data...</div>
     <div v-else-if="error" class="text-lg text-red-600">{{ error }}</div>
     <div v-else-if="characterData">
-      <h2 class="text-3xl font-bold mb-2">{{ characterData.name }}</h2>
+      <div class="flex items-center gap-3 mb-4">
+        <h2 class="text-3xl font-bold">{{ characterData.name }}</h2>
+        <router-link v-if="characterData.name === 'Gydion'" to="/character/Gydion/spells"
+          class="text-blue-600 hover:text-blue-800 font-semibold">
+          View Spellbook →
+        </router-link>
+      </div>
 
       <CardTable :cards="characterData.cards" @select-card="openCardDetail" />
 

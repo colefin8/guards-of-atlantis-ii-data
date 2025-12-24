@@ -118,16 +118,16 @@ const getSortIndicator = (column: SortColumn) => {
 }
 
 const getColorClasses = (color: string) => {
-  const colorMap: Record<string, { bg: string; border: string; header: string; text: string }> = {
-    Red: { bg: 'bg-red-100', border: 'border-red-600', header: 'bg-red-600', text: 'text-red-700' },
-    Blue: { bg: 'bg-blue-100', border: 'border-blue-600', header: 'bg-blue-600', text: 'text-blue-700' },
-    Green: { bg: 'bg-green-100', border: 'border-green-600', header: 'bg-green-600', text: 'text-green-700' },
-    Black: { bg: 'bg-gray-100', border: 'border-gray-800', header: 'bg-gray-800', text: 'text-gray-800' },
-    Gold: { bg: 'bg-yellow-100', border: 'border-yellow-600', header: 'bg-yellow-600', text: 'text-yellow-700' },
-    Silver: { bg: 'bg-slate-100', border: 'border-slate-500', header: 'bg-slate-500', text: 'text-slate-700' },
-    Purple: { bg: 'bg-purple-100', border: 'border-purple-600', header: 'bg-purple-600', text: 'text-purple-700' },
+  const colorMap: Record<string, { bg: string; border: string; header: string; text: string; hover: string }> = {
+    Red: { bg: 'bg-red-100', border: 'border-red-600', header: 'bg-red-600', text: 'text-red-700', hover: 'hover:bg-red-200' },
+    Blue: { bg: 'bg-blue-100', border: 'border-blue-600', header: 'bg-blue-600', text: 'text-blue-700', hover: 'hover:bg-blue-200' },
+    Green: { bg: 'bg-green-100', border: 'border-green-600', header: 'bg-green-600', text: 'text-green-700', hover: 'hover:bg-green-200' },
+    Black: { bg: 'bg-gray-100', border: 'border-gray-800', header: 'bg-gray-800', text: 'text-gray-800', hover: 'hover:bg-gray-200' },
+    Gold: { bg: 'bg-yellow-100', border: 'border-yellow-600', header: 'bg-yellow-600', text: 'text-yellow-700', hover: 'hover:bg-yellow-200' },
+    Silver: { bg: 'bg-slate-100', border: 'border-slate-500', header: 'bg-slate-500', text: 'text-slate-700', hover: 'hover:bg-slate-200' },
+    Purple: { bg: 'bg-purple-100', border: 'border-purple-600', header: 'bg-purple-600', text: 'text-purple-700', hover: 'hover:bg-purple-200' },
   }
-  return colorMap[color] || { bg: 'bg-slate-100', border: 'border-slate-600', header: 'bg-slate-600', text: 'text-slate-700' }
+  return colorMap[color] || { bg: 'bg-slate-100', border: 'border-slate-600', header: 'bg-slate-600', text: 'text-slate-700', hover: 'hover:bg-slate-200' }
 }
 
 const handleDragStart = (index: number) => {
@@ -182,7 +182,7 @@ const handleRowClick = (card: Card, event: MouseEvent) => {
       <table class="w-full border-collapse">
         <thead>
           <tr class="bg-slate-600 text-white">
-            <th class="border-2 border-slate-600 p-3 text-left w-12" aria-label="Reorder"><span
+            <th class="hidden lg:table-cell border-2 border-slate-600 p-3 text-left w-12" aria-label="Reorder"><span
                 class="sr-only">Reorder</span></th>
             <th
               class="hidden lg:table-cell border-2 border-slate-600 p-3 text-left cursor-pointer hover:bg-slate-500 whitespace-nowrap w-auto"
@@ -232,10 +232,11 @@ const handleRowClick = (card: Card, event: MouseEvent) => {
           <tr v-for="(card, index) in sortedCards" :key="card.cardName" :class="[
             getColorClasses(card.color).bg,
             getColorClasses(card.color).border,
+            getColorClasses(card.color).hover,
             'border-2 transition-all',
             draggedIndex === index ? 'border-dashed opacity-60' : ''
           ]" @click="handleRowClick(card, $event)">
-            <td class="border-2 border-slate-600 p-0 w-12">
+            <td class="hidden lg:table-cell border-2 border-slate-600 p-0 w-12">
               <div draggable="true"
                 class="h-full p-2 cursor-move flex items-center justify-center hover:opacity-70 transition-opacity"
                 @dragstart.stop="handleDragStart(index)" @dragover.stop="handleDragOver(index, $event)"

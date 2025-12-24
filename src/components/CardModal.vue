@@ -1,6 +1,9 @@
 <script setup lang="ts">
 import { computed, ref, onMounted } from 'vue'
 import type { Card, Spell } from '../../types'
+import StatBox from './StatBox.vue'
+import SectionBox from './SectionBox.vue'
+import CardList from './CardList.vue'
 
 interface Props {
   card: Card
@@ -103,48 +106,30 @@ const updateReferencedSpells = () => {
       </div>
       <div class="p-5">
         <div class="grid grid-cols-2 gap-3 mb-5">
-          <div v-if="card.initiative" :class="[getColorClasses(card.color).text, 'bg-white p-3 rounded']">
-            <strong class="text-base block mb-1">Initiative:</strong> <span class="text-xl font-semibold">{{
-              card.initiative }}</span>
-          </div>
-          <div v-if="card.tier" :class="[getColorClasses(card.color).text, 'bg-white p-3 rounded']">
-            <strong class="text-base block mb-1">Tier:</strong> <span class="text-xl font-semibold">{{
-              card.tier }}</span>
-          </div>
-          <div v-if="card.defense" :class="[getColorClasses(card.color).text, 'bg-white p-3 rounded']">
-            <strong class="text-base block mb-1">Defense:</strong> <span class="text-xl font-semibold">{{
-              card.defense }}</span>
-          </div>
-          <div v-if="card.movement" :class="[getColorClasses(card.color).text, 'bg-white p-3 rounded']">
-            <strong class="text-base block mb-1">Movement:</strong> <span class="text-xl font-semibold">{{
-              card.movement }}</span>
-          </div>
-          <div v-if="card.attack" :class="[getColorClasses(card.color).text, 'bg-white p-3 rounded']">
-            <strong class="text-base block mb-1">Attack:</strong> <span class="text-xl font-semibold">{{
-              card.attack }}</span>
-          </div>
-          <div v-if="card.actionType" :class="[getColorClasses(card.color).text, 'bg-white p-3 rounded']">
-            <strong class="text-base block mb-1">Action:</strong> <span class="text-xl font-semibold">{{
-              card.actionType }}</span>
-          </div>
-          <div v-if="card.rangeRadius" :class="[getColorClasses(card.color).text, 'bg-white p-3 rounded']">
-            <strong class="text-base block mb-1">Range/Radius:</strong> <span class="text-xl font-semibold">{{
-              card.rangeRadius }}</span>
-          </div>
-          <div v-if="card.itemIcon" :class="[getColorClasses(card.color).text, 'bg-white p-3 rounded']">
-            <strong class="text-base block mb-1">Item Icon:</strong> <span class="text-xl font-semibold">{{
-              card.itemIcon }}</span>
-          </div>
+          <StatBox v-if="card.initiative" label="Initiative" :value="card.initiative"
+            :bg-color="getColorClasses(card.color).bg" />
+          <StatBox v-if="card.tier" label="Tier" :value="card.tier" :bg-color="getColorClasses(card.color).bg" />
+          <StatBox v-if="card.defense" label="Defense" :value="card.defense"
+            :bg-color="getColorClasses(card.color).bg" />
+          <StatBox v-if="card.movement" label="Movement" :value="card.movement"
+            :bg-color="getColorClasses(card.color).bg" />
+          <StatBox v-if="card.attack" label="Attack" :value="card.attack" :bg-color="getColorClasses(card.color).bg" />
+          <StatBox v-if="card.actionType" label="Action" :value="card.actionType"
+            :bg-color="getColorClasses(card.color).bg" />
+          <StatBox v-if="card.rangeRadius" label="Range/Radius" :value="card.rangeRadius"
+            :bg-color="getColorClasses(card.color).bg" />
+          <StatBox v-if="card.itemIcon" label="Item Icon" :value="card.itemIcon"
+            :bg-color="getColorClasses(card.color).bg" />
         </div>
-        <div :class="[getColorClasses(card.color).bg, 'p-4 rounded mb-4']">
+        <SectionBox :bg-color="getColorClasses(card.color).bg">
           <strong class="text-base block mb-2">Ability:</strong>
           <div class="text-sm leading-relaxed whitespace-pre-wrap">{{ card.cardText }}</div>
           <p v-if="card.flavorText" class="text-xs italic text-gray-600 mt-2">{{ card.flavorText }}</p>
-        </div>
+        </SectionBox>
 
         <!-- Gydion spell references -->
-        <div v-if="characterName === 'Gydion' && referencedSpells.length > 0"
-          :class="[getColorClasses(card.color).bg, 'p-4 rounded mb-4']">
+        <SectionBox v-if="characterName === 'Gydion' && referencedSpells.length > 0"
+          :bg-color="getColorClasses(card.color).bg">
           <button @click="showSpells = !showSpells"
             class="w-full text-left font-semibold text-base mb-2 flex justify-between items-center hover:opacity-80">
             <span>Referenced Spells ({{ referencedSpells.length }})</span>
@@ -157,28 +142,12 @@ const updateReferencedSpells = () => {
               <p class="text-xs leading-relaxed mt-2 whitespace-pre-wrap">{{ spell.cardText }}</p>
             </div>
           </div>
-        </div>
+        </SectionBox>
 
         <!-- Upgrade/Downgrade buttons -->
         <div class="mt-4 flex flex-col gap-3">
-          <div v-if="getDowngrades.length > 0" class="flex-1">
-            <p class="text-base font-bold mb-2">Downgrades:</p>
-            <div class="flex flex-wrap gap-2">
-              <button v-for="c in getDowngrades" :key="c.cardName" @click="$emit('select-card', c)"
-                :class="[getColorClasses(c.color).bg, getColorClasses(c.color).header, 'text-white px-3 py-2 rounded text-sm font-semibold hover:opacity-80 transition-opacity']">
-                {{ c.cardName }} ({{ c.tier }})
-              </button>
-            </div>
-          </div>
-          <div v-if="getUpgrades.length > 0" class="flex-1">
-            <p class="text-base font-bold mb-2">Upgrades:</p>
-            <div class="flex flex-wrap gap-2">
-              <button v-for="c in getUpgrades" :key="c.cardName" @click="$emit('select-card', c)"
-                :class="[getColorClasses(c.color).bg, getColorClasses(c.color).header, 'text-white px-3 py-2 rounded text-sm font-semibold hover:opacity-80 transition-opacity']">
-                {{ c.cardName }} ({{ c.tier }})
-              </button>
-            </div>
-          </div>
+          <CardList :cards="getDowngrades" label="Downgrades" @select-card="$emit('select-card', $event)" />
+          <CardList :cards="getUpgrades" label="Upgrades" @select-card="$emit('select-card', $event)" />
         </div>
       </div>
     </div>
