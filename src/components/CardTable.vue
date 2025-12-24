@@ -30,17 +30,9 @@ const emit = defineEmits<{
 
 const sortColumn = ref<SortColumn>('id')
 const sortDirection = ref<'asc' | 'desc'>('asc')
-const draggedIndex = ref<number | null>(null)
-const dragOverIndex = ref<number | null>(null)
-const hasManualOrder = ref(false)
 
 const sortedCards = computed(() => {
   const cards = [...props.cards]
-
-  // If manual order is active, don't sort
-  if (hasManualOrder.value) {
-    return cards
-  }
 
   cards.sort((a, b) => {
     let aVal = a[sortColumn.value] || ''
@@ -130,48 +122,7 @@ const getColorClasses = (color: string) => {
   return colorMap[color] || { bg: 'bg-slate-100', border: 'border-slate-600', header: 'bg-slate-600', text: 'text-slate-700', hover: 'hover:bg-slate-200' }
 }
 
-const handleDragStart = (index: number) => {
-  draggedIndex.value = index
-}
-
-const handleDragOver = (index: number, event: DragEvent) => {
-  event.preventDefault()
-  dragOverIndex.value = index
-
-  // Reorder as dragging if different from current position
-  if (draggedIndex.value !== null && draggedIndex.value !== index) {
-    const reorderedList = [...sortedCards.value]
-    const draggedCard = reorderedList[draggedIndex.value]
-    if (draggedCard) {
-      reorderedList.splice(draggedIndex.value, 1)
-      reorderedList.splice(index, 0, draggedCard)
-      draggedIndex.value = index
-      hasManualOrder.value = true
-    }
-  }
-}
-
-const handleDragLeave = () => {
-  dragOverIndex.value = null
-}
-
-const handleDrop = (dropIndex: number, event: DragEvent) => {
-  event.preventDefault()
-  draggedIndex.value = null
-  dragOverIndex.value = null
-}
-
-const handleDragEnd = () => {
-  draggedIndex.value = null
-  dragOverIndex.value = null
-}
-
-const handleRowClick = (card: Card, event: MouseEvent) => {
-  // Check if click originated from the drag handle - if so, don't emit
-  const target = event.target as HTMLElement
-  if (target.closest('[draggable="true"]')) {
-    return
-  }
+const handleRowClick = (card: Card) => {
   emit('select-card', card)
 }
 </script>
@@ -182,8 +133,6 @@ const handleRowClick = (card: Card, event: MouseEvent) => {
       <table class="w-full border-collapse">
         <thead>
           <tr class="bg-slate-600 text-white">
-            <th class="hidden lg:table-cell border-2 border-slate-600 p-3 text-left w-12" aria-label="Reorder"><span
-                class="sr-only">Reorder</span></th>
             <th
               class="hidden lg:table-cell border-2 border-slate-600 p-3 text-left cursor-pointer hover:bg-slate-500 whitespace-nowrap w-auto"
               @click="handleSort('id')">
@@ -229,21 +178,12 @@ const handleRowClick = (card: Card, event: MouseEvent) => {
           </tr>
         </thead>
         <tbody>
-          <tr v-for="(card, index) in sortedCards" :key="card.cardName" :class="[
+          <tr v-for="card in sortedCards" :key="card.cardName" :class="[
             getColorClasses(card.color).bg,
             getColorClasses(card.color).border,
             getColorClasses(card.color).hover,
-            'border-2 transition-all',
-            draggedIndex === index ? 'border-dashed opacity-60' : ''
-          ]" @click="handleRowClick(card, $event)">
-            <td class="hidden lg:table-cell border-2 border-slate-600 p-0 w-12">
-              <div draggable="true"
-                class="h-full p-2 cursor-move flex items-center justify-center hover:opacity-70 transition-opacity"
-                @dragstart.stop="handleDragStart(index)" @dragover.stop="handleDragOver(index, $event)"
-                @dragleave.stop="handleDragLeave" @drop.stop="handleDrop(index, $event)" @dragend.stop="handleDragEnd">
-                ⋮
-              </div>
-            </td>
+            'border-2 transition-all cursor-pointer'
+          ]" @click="handleRowClick(card)">
             <td class="hidden lg:table-cell border-2 border-slate-600 p-3 font-mono text-sm font-bold">{{ card.id }}
             </td>
             <td class="border-2 border-slate-600 p-3 font-semibold">{{ card.cardName }}</td>
